@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    /* border: 1px solid #fff; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    margin: 7px 0 0 -3px;
+}
+.menu {
+    margin-left: auto;
+}
+.menu__list {
+    list-style: none;
+    color: #fff;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 13px;
+}
+.menu__item {
+    font-size: 13px;
+    display: inline;
+    text-transform: uppercase;
+}
+.menu__item:before {
+    content: "\2022";
+    margin-left: 12px;
+    margin-right: 15px;
+}
+.menu__item:nth-child(1)::before {
+    content: "";
+}
+.purchase {
+    margin-right: 10px;
+}
+.purchase-button {
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 13px;
+    background-color: #e45028;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 500;
+    margin-left: 2px;
+    text-decoration: none;
+}

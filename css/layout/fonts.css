@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'LifeHack';
+    src: url('../../fonts/Lifehack Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gagalin';
+    src: url('../../fonts/Gagalin/Gagalin-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../fonts/Ubuntu/Ubuntu-B.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../../fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

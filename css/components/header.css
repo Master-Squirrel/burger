@@ -12,6 +12,7 @@
     margin-left: auto;
 }
 .menu__list {
+    display: flex;
     list-style: none;
     color: #fff;
     font-family: Ubuntu;
@@ -19,8 +20,7 @@
     font-size: 13px;
 }
 .menu__item {
-    font-size: 13px;
-    display: inline;
+    font-size: 13px;    
     text-transform: uppercase;
 }
 .menu__item:before {
@@ -33,15 +33,19 @@
 }
 .purchase {
     margin-right: 10px;
+
+    background-color: #e45028;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 15px;
+
 }
 .purchase-button {
     color: #fff;
     font-family: Ubuntu;
     font-size: 13px;
-    background-color: #e45028;
-    border-radius: 5px;
-    padding: 10px 15px;
+    
     font-weight: 500;
-    margin-left: 2px;
+   
     text-decoration: none;
 }

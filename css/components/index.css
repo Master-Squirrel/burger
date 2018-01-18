@@ -4,13 +4,18 @@
     height: 100vh;
     width: 100%;
 }
-.start{
+.section--start {
     background: url("../../img/video-bg.png") center center no-repeat;
     background-size: cover;
 }
-.section2 {
+.section--wearebest {
     background: url("../../img/bg2.png") center center no-repeat;
     background-size: cover;
+}
+.section-reviews {
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
 }
 /* Бургерный блок */
 .burger{

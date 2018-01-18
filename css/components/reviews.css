@@ -1,0 +1,82 @@
+.reviews {
+     border: 1px solid red;
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     background-color: #454545;
+     align-items: flex-start;
+     font-size: 0;
+ }
+.reviews__block {
+    width: 25%;
+    min-width: 275px;
+    
+    /* max-height: 550px; */
+    
+ }
+.reviews__image {
+    width: 100%;
+}
+.reviews__block2 {
+    position: relative;
+}
+.reviews__block2::before {
+    content: "";
+    display: none;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #141414;
+    opacity: 0.3;
+    -moz-transition: background .3s linear;
+    -webkit-transition: background .3s linear;
+    -o-transition: background .3s linear;
+    transition: background .3s linear;
+}
+.reviews__block2:hover::before {
+    display: block;
+}
+
+.reviews__hoverblock {
+    position: absolute;
+    /* top: 10px;
+    left: 10px; */
+    width: 90%;
+    padding: 20px 0 0 20px;
+}
+
+.reviews__reviewername {
+    font-size: 14px;
+    font-family: "Gagalin";
+    color: rgb(255, 255, 255);
+    line-height: 2.008;
+    padding-top: 2vh;
+
+    
+     }
+.reviews_reviewertext {
+    
+        font-size: 14px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        line-height: 1.714;  
+}  
+
+.reviews__reviewerbutton {
+        display: inline-block;
+        font-size: 13px;
+        font-family: "Ubuntu";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        margin-top: 10px;
+        padding: 10px;
+        text-decoration: none;
+        background-color: #2f3234;
+        border-radius: 5px;
+           
+}
+.reviews__reviewerbutton:hover {
+    background-color: #1f2122;
+}

@@ -1,13 +1,17 @@
-.start{
-    background: url("../../img/video-bg.png") center center no-repeat;
-    background-size: cover;
+.section {
     display: flex;
     vertical-align: middle;
     height: 100vh;
     width: 100%;
-    display: flex;
 }
-
+.start{
+    background: url("../../img/video-bg.png") center center no-repeat;
+    background-size: cover;
+}
+.section2 {
+    background: url("../../img/bg2.png") center center no-repeat;
+    background-size: cover;
+}
 /* Бургерный блок */
 .burger{
     flex: 1;

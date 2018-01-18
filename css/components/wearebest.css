@@ -1,0 +1,52 @@
+.wearebest {
+    display: flex;
+    flex-direction: column;    
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    justify-content: center;
+}  
+.wearebest__header {
+    font-family: Gagalin;
+    font-size: 72px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+
+    
+}
+.wearebest__blocks {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.wearebest__block {
+    width: 33%;
+}
+.wearebest_subheader {
+    font-size: 24px;
+    font-family: "Lifehack";
+    padding-bottom: 10px;
+    color: rgb(47, 50, 52);
+    line-height: 1.167;      
+}
+.wearebest__image1 {
+    padding-bottom: 20px;
+}
+.wearebest__image2 {
+    padding-bottom: 24px;
+}
+.wearebest__image3 {
+    padding-bottom: 34px;
+}
+.wearebest__description {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 300;
+    color: #2f3234;
+    opacity: 0.8;
+    line-height: 1.714;      
+}

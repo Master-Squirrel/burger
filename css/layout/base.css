@@ -11,6 +11,8 @@ html, body {
     margin: 0 auto;
 }
 .container--flex {
-    display: flex;
+    display: flex;      
+}
+.container--cloumn {
     flex-direction: column;    
 }

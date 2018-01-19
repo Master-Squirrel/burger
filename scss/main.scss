@@ -1,0 +1,28 @@
+//config
+
+@import "config/_variables.scss";
+@import "config/_mixins.scss";
+
+//base
+
+@import "layout/_font.scss";
+@import "layout/_base.scss";
+@import "layout/_adjustment.scss";
+@import "layout/_header.scss";
+@import "layout/_paginator.scss";
+//section
+
+@import "section/_hero.scss";
+@import "section/_best.scss";
+@import "section/_reviews.scss";
+
+
+// @import "layout/normalize.css";
+// @import "layout/fonts.css";
+// @import "layout/base.css";
+
+// @import "components/header.css";
+// @import "components/index.css";
+// @import "components/paginator.css";
+// @import "components/wearebest.css";
+// @import "components/reviews.css";

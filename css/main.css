@@ -38,6 +38,9 @@
 html, body {
   height: 100%; }
 
+body {
+  font-size: 16px; }
+
 .wrapper {
   height: 100%;
   min-width: 940px; }
@@ -62,7 +65,8 @@ html, body {
   display: flex;
   vertical-align: middle;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  min-height: 650px; }
 
 .arrow {
   display: block;
@@ -73,6 +77,30 @@ html, body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+h2 {
+  font-family: Gagalin;
+  font-size: 72px;
+  text-transform: uppercase;
+  text-align: center; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect 0 0 0 0;
+  overflow: hidden; }
 
 .header {
   display: -webkit-box;
@@ -88,7 +116,10 @@ html, body {
   width: 100%; }
 
 .logo {
-  margin: 7px 0 0 -3px; }
+  margin: 7px 0 0 -3px;
+  overflow: hidden;
+  width: 92px;
+  height: 69px; }
 
 .menu {
   margin-left: auto; }
@@ -104,38 +135,59 @@ html, body {
   font-size: 13px; }
 
 .menu__item {
+  display: inline-block;
   font-size: 13px;
   text-transform: uppercase;
   white-space: nowrap; }
 
 .menu__item:before {
-  content: "\2022";
-  margin-left: 12px;
-  margin-right: 15px; }
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 0 12px 4px 12px; }
 
 .menu__item:nth-child(1)::before {
   content: ""; }
-
-.purchase {
-  margin-right: 10px;
-  background-color: #e45028;
-  border-radius: 5px;
-  padding: 10px 15px;
-  margin-left: 15px; }
-
-.purchase__button {
-  color: #fff;
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none; }
 
 .menu__link {
   color: #fff;
   font-family: Ubuntu;
   font-size: 13px;
   font-weight: 500;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5; }
+  .menu__link:hover {
+    text-decoration: underline; }
+
+.purchase {
+  margin-right: 10px;
+  margin-left: 15px;
+  background-color: #e25028;
+  border-radius: 5px;
+  padding: 10px 15px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .purchase:hover {
+    background-color: black; }
+
+.purchase__button {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.paginator__link {
+  cursor: pointer; }
 
 .paginator {
   position: fixed;
@@ -171,7 +223,7 @@ html, body {
   left: -4px; }
 
 .section--start {
-  background: url("../img/video-bg.png") center center no-repeat;
+  background: url("../img/bg1.jpg") center center no-repeat;
   background-size: cover; }
 
 /* Бургерный блок */
@@ -214,7 +266,7 @@ html, body {
 .burgerblock__block-wedo {
   font-size: 72px;
   font-family: Gagalin;
-  color: #f9b43b;
+  color: #f8b43a;
   line-height: 1.8; }
 
 .burgerblock__naturalburgers {
@@ -224,11 +276,11 @@ html, body {
   letter-spacing: -1.9px;
   line-height: 0.923; }
 
-.section--wearebest {
-  background: url("../img/bg2.png") center center no-repeat;
+.section--best {
+  background: url("../img/bg2.jpg") center center no-repeat;
   background-size: cover; }
 
-.wearebest {
+.best {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,15 +295,11 @@ html, body {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.wearebest__header {
-  font-family: Gagalin;
-  font-size: 72px;
+.best__header {
   color: black;
-  text-transform: uppercase;
-  text-align: center;
   padding-bottom: 50px; }
 
-.wearebest__blocks {
+.best__list {
   text-align: center;
   margin: 0 auto;
   display: -webkit-box;
@@ -262,26 +310,27 @@ html, body {
   justify-content: space-between;
   width: 100%; }
 
-.wearebest__block {
-  width: 33%; }
+.best__item {
+  width: 33%;
+  display: inline-block; }
 
-.wearebest_subheader {
+.best_subheader {
   font-size: 24px;
   font-family: "Lifehack";
   padding-bottom: 10px;
   color: #2f3234;
   line-height: 1.167; }
 
-.wearebest__image1 {
+.best__images--meat {
   padding-bottom: 20px; }
 
-.wearebest__image2 {
+.best__images--handmade {
   padding-bottom: 24px; }
 
-.wearebest__image3 {
+.best__images--natural {
   padding-bottom: 34px; }
 
-.wearebest__description {
+.best__description {
   font-family: "Ubuntu";
   font-size: 14px;
   font-weight: 300;
@@ -297,14 +346,12 @@ html, body {
   width: 100%; }
 
 .reviews {
-  border: 1px solid red;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #454545;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -312,16 +359,42 @@ html, body {
 
 .reviews__block {
   width: 25%;
-  min-width: 275px;
-  /* max-height: 550px; */ }
-
-.reviews__image {
-  width: 100%; }
-
-.reviews__block2 {
+  height: 50%;
   position: relative; }
 
-.reviews__block2::before {
+.reviews__block:nth-of-type(1) {
+  background: url("../img/reviewers/1.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block:nth-of-type(2) {
+  background: url("../img/reviewers/2.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block:nth-of-type(3) {
+  background: url("../img/reviewers/3.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block:nth-of-type(4) {
+  background: url("../img/reviewers/4.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block:nth-of-type(5) {
+  background: url("../img/reviewers/5.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block:nth-of-type(6) {
+  background: url("../img/reviewers/6.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block:nth-of-type(7) {
+  background: url("../img/reviewers/7.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block:nth-of-type(8) {
+  background: url("../img/reviewers/8.jpg") center center no-repeat;
+  background-size: cover; }
+
+.reviews__block::before {
   content: "";
   display: none;
   position: absolute;
@@ -336,10 +409,14 @@ html, body {
   -o-transition: background .3s linear;
   transition: background .3s linear; }
 
-.reviews__block2:hover::before {
+.reviews__block:hover::before {
+  display: block; }
+
+.reviews__block:hover > .reviews__hoverblock {
   display: block; }
 
 .reviews__hoverblock {
+  display: none;
   position: absolute;
   /* top: 10px;
    left: 10px; */

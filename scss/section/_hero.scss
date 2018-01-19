@@ -1,5 +1,5 @@
 .section--start {
-    background: url("../img/video-bg.png") center center no-repeat;
+    background: url("../img/bg1.jpg") center center no-repeat;
     background-size: cover;
 }
 /* Бургерный блок */
@@ -37,7 +37,7 @@
 .burgerblock__block-wedo {
     font-size: 72px;
     font-family: Gagalin;
-    color: #f9b43b;
+    color: $yellow;
     line-height: 1.8;
 }
 

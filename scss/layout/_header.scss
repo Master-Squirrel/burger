@@ -33,7 +33,7 @@
     white-space: nowrap;
 }
 
-.menu__item:before {
+.menu__item::after {
     // content: "\2022";
     content: ' ';
     display: inline-block;
@@ -43,8 +43,8 @@
     
 }
 
-.menu__item:nth-child(1)::before {
-    content: "";
+.menu__item:last-child::after {
+    display: none;
 }
 .menu__link {
     color: #fff;

@@ -33,7 +33,7 @@
 .team__link {
     color: white;
     font-family: Gagalin;
-    font-size: rem(14px);
+    font-size: 14px;
     text-decoration: none;
     line-height: 2.008;
     text-transform: uppercase;
@@ -68,3 +68,33 @@
     padding-left: 50px;
 
 }
+.team__icon {
+    display: inline-block;
+    // vertical-align: middle;
+
+    fill: $yellow;
+    width: 10px;
+    height: 10px; 
+
+    
+
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+}
+
+.team__icon--active {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+svg#triangle {
+    transform-origin: center;
+}
+

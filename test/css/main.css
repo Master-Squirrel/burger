@@ -1,0 +1,29 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  fill: #00bfa5;
+  width: 25px;
+  height: 25px; }
+  .icon:hover {
+    fill: crimson; }
+  .icon:first-child {
+    margin-left: 0; }
+
+.wrap {
+  width: 60%;
+  height: 100px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px; }
+  .wrap:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+
+.title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: cadetblue; }

@@ -522,14 +522,9 @@ ul {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
-.team__icon--active {
+.team__item--active > .team__icon {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg); }
-
-svg#triangle {
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center; }

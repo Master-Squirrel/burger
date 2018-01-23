@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <symbol id="triangle" viewBox="0 0 230 140"/>
+  <symbol id="triangle" viewBox="0 0 230 140">
    <polygon points="5,135 115,5 225,135" style="fill:#f8b43a;stroke:#f8b43a;stroke-width:3" />
     </symbol>
 </svg>

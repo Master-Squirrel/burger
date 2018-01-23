@@ -21,26 +21,6 @@
     background-repeat: no-repeat;
 }
 
-.reviews__block::before {
-    content: "";
-    display: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #141414;
-    opacity: 0.7;
-    -moz-transition: background .3s linear;
-    -webkit-transition: background .3s linear;
-    -o-transition: background .3s linear;
-    transition: background .3s linear;
-}
-
-.reviews__block:hover::before {
-    display: block;
-}
-
 .reviews__block:hover>.reviews__hoverblock {
     display: block;
 }
@@ -48,10 +28,10 @@
 .reviews__hoverblock {
     display: none;
     position: absolute;
-    /* top: 10px;
-   left: 10px; */
-    width: 90%;
+    width: 100%;
+    height: 100%;
     padding: 20px 0 0 20px;
+    background-color: rgba($color: #000000, $alpha: 0.6)
 }
 
 .reviews__reviewername {

@@ -6,9 +6,9 @@
 .menu__accordion {
     display: flex;
     position: absolute;
-   
+
     right: 0;
- 
+
     height: 100%;
     border: 1px solid red;
     margin: 0;
@@ -16,6 +16,7 @@
 .accordion__item {
     display: flex;
     height: 100%;
+    justify-content: flex-end;
 }
 .accordion__link {
     display: flex;
@@ -49,19 +50,51 @@
     font-family: Gagalin;
     font-size: 42px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: white;
     text-decoration: none;
 
     z-index: 10;
     // width: 100vh;
     align-self: flex-end;
-    transform-origin: center;
+    transform-origin: left;
 
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-    transform:  rotate(-90deg);
-//translate(-25%, -33vh)
+    transform: translate(25%, 0) rotate(-90deg);
+
+}
+.accordion__description {
+    display: none;
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+   
+    width: 300px;
+
+    position: relative;
+    margin: 0;
+
+    &::before {
+         content: "";
+         position: absolute;
+         display: block;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #2f3234;
+         opacity: 0.07;
+    }
+}
+.accordion__description--active {
+   
+    display: block;
+    
+
+
+
 }

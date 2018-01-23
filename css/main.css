@@ -448,19 +448,17 @@ ul {
   background-color: #1f2122; }
 
 .section-team {
-  width: 100%;
-  height: 100%;
   background: url("../img/bg3.jpg") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .team {
   position: absolute;
   display: block;
-  -webkit-transform: translate(100%, 0);
-  -ms-transform: translate(100%, 0);
-  transform: translate(100%, 0);
+  top: 0;
+  bottom: 0;
   width: 50%;
-  height: 100%;
+  right: 0;
   background-color: #2f3234;
   opacity: 0.93; }
 
@@ -509,7 +507,8 @@ ul {
   margin-bottom: 20px; }
 
 .team__description {
-  padding-left: 50px; }
+  padding-left: 50px;
+  font-size: 14px; }
 
 .team__icon {
   display: inline-block;
@@ -528,3 +527,59 @@ ul {
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg); }
+
+.section-menu {
+  background: url("../img/menu/1.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.menu__accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border: 1px solid red;
+  margin: 0; }
+
+.accordion__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+.accordion__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 150px;
+  border: 1px solid yellow;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  white-space: nowrap;
+  text-decoration: none; }
+
+.accordion__header {
+  font-family: Gagalin;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  z-index: 10;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }

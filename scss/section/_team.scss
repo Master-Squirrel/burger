@@ -75,18 +75,12 @@
     width: 10px;
     height: 10px;
 
+
+}
+.team__item--active > .team__icon {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
-
-}
-
-.team__item--active > .team__icon {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
 }

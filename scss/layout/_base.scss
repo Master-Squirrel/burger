@@ -15,6 +15,9 @@ body {
 }
 .container--flex {
     display: flex;
+    
+}
+.container--cloumn {
     flex-direction: column;    
 }
 .section {

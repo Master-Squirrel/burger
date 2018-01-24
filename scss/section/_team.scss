@@ -45,27 +45,36 @@
     font-family: Ubuntu;
     overflow: hidden;
     height: 0;
+    margin: 10px 0 0 20px;
 }
 .team__item--active {
 
+    margin-bottom: 30px;
     .team__link {
         color: $yellow;
     }
     .team__member {
         height: 100px;
     }
+
+    .team__icon {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 }
-.team__image {}
-.team__status {
-    
+.member__description {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    color: white;
+    margin-left: 15px;
+}
+.member__status {  
     display: block;
     font-weight: bold;
-    margin-bottom: 20px;
-}
-.team__description {
-    padding-left: 50px;
-    font-size: 14px;
-
+    margin-bottom: 15px;
 }
 .team__icon {
     display: inline-block;
@@ -77,10 +86,10 @@
 
 
 }
-.team__item--active > .team__icon {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
+// .team__item--active > .team__icon {
+//     -webkit-transform: rotate(180deg);
+//     -moz-transform: rotate(180deg);
+//     -o-transform: rotate(180deg);
+//     -ms-transform: rotate(180deg);
+//     transform: rotate(180deg);
+// }

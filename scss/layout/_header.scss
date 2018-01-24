@@ -24,22 +24,30 @@
     font-family: Ubuntu;
     font-weight: 500;
     font-size: 13px;    
+  
+    line-height: 2.308;
+    
+ 
+      
 }
 
 .menu__item {
-    display: inline-block;
+    // display: inline-block;
+    display: block;
     font-size: 13px;
     text-transform: uppercase;
     white-space: nowrap;
+    
+    vertical-align: middle;
 }
 
 .menu__item::after {
     // content: "\2022";
     content: ' ';
     display: inline-block;
-    vertical-align: middle;
-    @include circle (6px, #fff);
-    margin: 0 12px 4px 12px;
+    height: 69px; 
+    @include circle (4px, #fff);
+    margin: 0 13px 0 13px;
     
 }
 
@@ -47,7 +55,9 @@
     display: none;
 }
 .menu__link {
-    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+     color: #fff;
     font-family: Ubuntu;
     font-size: 13px;
     font-weight: 500;

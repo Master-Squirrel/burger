@@ -143,28 +143,32 @@ ul {
   color: #fff;
   font-family: Ubuntu;
   font-weight: 500;
-  font-size: 13px; }
+  font-size: 13px;
+  line-height: 2.308; }
 
 .menu__item {
-  display: inline-block;
+  display: block;
   font-size: 13px;
   text-transform: uppercase;
-  white-space: nowrap; }
+  white-space: nowrap;
+  vertical-align: middle; }
 
 .menu__item::after {
   content: ' ';
   display: inline-block;
-  vertical-align: middle;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
+  height: 69px;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
   background-color: #fff;
-  margin: 0 12px 4px 12px; }
+  margin: 0 13px 0 13px; }
 
 .menu__item:last-child::after {
   display: none; }
 
 .menu__link {
+  display: inline-block;
+  vertical-align: middle;
   color: #fff;
   font-family: Ubuntu;
   font-size: 13px;
@@ -282,12 +286,10 @@ ul {
   overflow: hidden; }
 
 .burgerblock__block {
-  width: 50%;
-  /* margin: 10px; */ }
+  width: 50%; }
 
 .burgerblock__slogan {
   text-align: left;
-  padding-left: 20px;
   padding-top: 50px; }
 
 .burger-slogan-naturalburger,
@@ -328,7 +330,7 @@ ul {
 
 .best__header {
   color: black;
-  margin-bottom: 70px; }
+  margin-bottom: 40px; }
 
 .best__list {
   text-align: center;
@@ -481,35 +483,38 @@ ul {
   font-weight: 300;
   font-family: Ubuntu;
   overflow: hidden;
-  height: 0; }
+  height: 0;
+  margin: 10px 0 0 20px; }
 
-.team__item--active .team__link {
-  color: #f8b43a; }
+.team__item--active {
+  margin-bottom: 30px; }
+  .team__item--active .team__link {
+    color: #f8b43a; }
+  .team__item--active .team__member {
+    height: 100px; }
+  .team__item--active .team__icon {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
 
-.team__item--active .team__member {
-  height: 100px; }
+.member__description {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  color: white;
+  margin-left: 15px; }
 
-.team__status {
+.member__status {
   display: block;
   font-weight: bold;
-  margin-bottom: 20px; }
-
-.team__description {
-  padding-left: 50px;
-  font-size: 14px; }
+  margin-bottom: 15px; }
 
 .team__icon {
   display: inline-block;
   fill: #f8b43a;
   width: 10px;
   height: 10px; }
-
-.team__item--active > .team__icon {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
 
 .section--menu {
   background: url("../img/bg4.jpg") center center no-repeat;
@@ -637,3 +642,30 @@ ul {
   height: 36px; }
   .networks__icon:hover {
     opacity: 1; }
+
+.section--form {
+  background: url("../img/bg6.jpg") center center no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__title {
+  color: #f8b43a;
+  line-height: 0.889; }
+
+.order__cell {
+  width: 50%;
+  border: 1px solid red;
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-weight: 300; }
+
+.order__string {
+  border: 1px solid yellow; }

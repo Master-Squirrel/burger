@@ -8,8 +8,9 @@
     display: block;
     top: 0;
     bottom: 0;
-    width: 50%;
     right: 0;
+
+    width: 50%;
 
     background-color: $dark;
     opacity: 0.93;
@@ -19,6 +20,7 @@
 }
 .team__area {
     // border: 1px solid yellow;
+    //width: 70% из вебинара Владимира
     margin: 0 rem(100px) 0 rem(50px);
 }
 .team__header {
@@ -54,7 +56,7 @@
         color: $yellow;
     }
     .team__member {
-        height: 100px;
+        height: auto;
     }
 
     .team__icon {

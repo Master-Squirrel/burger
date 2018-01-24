@@ -47,21 +47,5 @@
     font-family: "Ubuntu";
     color: rgb(255, 255, 255);
     line-height: 1.714;
-}
-
-.reviews__reviewerbutton {
-    display: inline-block;
-    font-size: 13px;
-    font-family: "Ubuntu";
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    margin-top: 10px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: $dark;
-    border-radius: 5px;
-}
-
-.reviews__reviewerbutton:hover {
-    background-color: #1f2122;
+    margin-bottom: 10px;
 }

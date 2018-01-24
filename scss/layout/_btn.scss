@@ -1,0 +1,28 @@
+.btn {
+
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: .5s; // min-width: rem(98px);
+    display: inline-block;
+
+    &:hover {
+        background-color: black; //darken ($orange, 7%);
+    }
+    &_color_orange {
+        background-color: $orange;
+    }
+    &_color_dark {
+        background-color: $dark;
+    }
+    &_nocolor {
+        background-color: transparent;
+    }
+    .btn__text {
+        color: #fff;
+        font-family: Ubuntu;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}

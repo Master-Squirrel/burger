@@ -26,10 +26,7 @@
     margin-bottom: 10px;
 }
 .contacts__address-phone {
-    color: #e45028;
-    font-size: 14px;
-    font-family: "Ubuntu";
-    font-weight: bold;
+
 }
 .contacts__social {
     width: 50%;
@@ -38,11 +35,12 @@
 }
 .contacts__item {
     display: inline-block;
+    margin-right: 15px;
 }
 .network__link {
     text-decoration: none;
     display: inline-block;
-    margin-right: 15px;
+    
 }
 .networks__icon {
     display: inline-block;
@@ -57,3 +55,10 @@
         opacity: 1;
     }
 }
+.contacts__phonelink  {
+    color: #e45028;
+    font-size: 14px;
+    font-family: "Ubuntu";
+    font-weight: bold;
+    text-decoration: none;
+} 

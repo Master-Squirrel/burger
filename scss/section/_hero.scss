@@ -4,10 +4,12 @@
 }
 /* Бургерный блок */
 .burger{
-    flex: 1;
+    flex: .8; //Изменено с 1
+    // padding-bottom: 80px;
+
     display: flex;   
     width: 100%;
-    padding-bottom: 80px;
+    
 }
 .burgerblock {
     display: flex;
@@ -18,10 +20,13 @@
     /* width: 900px; */
 }
 .burgerblock__image {
-    width: 451px;
-    height: 359px;
+    // width: 451px;
+    // height: 359px;
     overflow: hidden;
-    }
+}
+.burgerblock__image-img {
+        max-width: 100%;
+}
 .burgerblock__block {
     width: 50%;
 

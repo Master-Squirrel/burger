@@ -24,11 +24,8 @@
     font-family: Ubuntu;
     font-weight: 500;
     font-size: 13px;    
-  
-    line-height: 2.308;
-    
- 
-      
+    margin-right: 20px;
+    line-height: 2.308;     
 }
 
 .menu__item {
@@ -69,29 +66,6 @@
     }
 }
 
-.purchase {
-    margin-right: 10px;
-    margin-left: 15px;
-    
-    background-color: $orange;
-    border-radius: 5px;
-    padding: 10px 15px;
-
-    transition: .5s;
-    // min-width: rem(98px);
-
-    &:hover {
-        background-color: black; //darken ($orange, 7%);
-    }
-}
-.purchase__button {
-    color: #fff;
-    font-family: Ubuntu;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
-}
 .paginator__link {
     cursor: pointer;
 }

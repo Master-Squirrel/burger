@@ -647,7 +647,8 @@ ul {
 
 .order__title {
   color: #f8b43a;
-  line-height: 0.889; }
+  line-height: 0.889;
+  margin-bottom: 30px; }
 
 .order__form {
   display: -webkit-box;

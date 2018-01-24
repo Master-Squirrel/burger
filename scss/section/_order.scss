@@ -6,11 +6,12 @@
 .order__header {
     width: 100%;
     text-align: center;
+    
 }
 .order__title {
     color: $yellow;
     line-height: 0.889;
-
+    margin-bottom: 30px;
 }
 .order__form {
     display: flex;

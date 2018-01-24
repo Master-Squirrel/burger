@@ -36,14 +36,19 @@
     text-align: right;
     vertical-align: middle;
 }
+.contacts__item {
+    display: inline-block;
+}
 .network__link {
     text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
 }
 .networks__icon {
     display: inline-block;
     fill: white;
     opacity: 0.3;
-    margin-right: 15px;
+    
 
     width: 36px;
     height: 36px;

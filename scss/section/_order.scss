@@ -6,7 +6,7 @@
 .order__header {
     width: 100%;
     text-align: center;
-    
+
 }
 .order__title {
     color: $yellow;
@@ -15,17 +15,15 @@
 }
 .order__form {
     display: flex;
- 
-}
 
+}
 
 .order__column {
     display: flex;
     flex-direction: column;
 
     width: 50%;
-    
-    
+
     color: white;
     font-family: "Ubuntu";
     font-size: 14px;
@@ -33,20 +31,21 @@
 }
 
 .order__string {
-    
+
     width: 100%;
-    
     display: flex;
 }
 .order__label {
-    //display: block;
+    display: inline-block;
     margin-right: 20px;
     flex: 1;
-    
+
     &_radio {
         flex: 0;
-        white-space: nowrap;       
-        border: 1px solid red;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        // border: 1px solid red;
+
     }
 }
 .order__input {
@@ -64,32 +63,59 @@
     vertical-align: middle;
     display: none;
 
-    
-        // @include circle (4px, #fff);
-    
+    // @include circle (4px, #fff);
+    &:checked + .order__radio-fake::after {
+        display: block;
+    }
+    &:checked + .order__checkbox-fake::after {
+        display: block;
+    }
+
 }
-.order__checkbox-fake {
+
+.order__radio-fake, .order__checkbox-fake {
     width: 15px;
     height: 15px;
     display: inline-block;
     vertical-align: middle;
-    
-    border: 1px solid #cbcbcb;   
+    border: 1px solid #cbcbcb;
     background-color: white;
     position: relative;
-    
 }
 .order__radio-fake {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    vertical-align: middle;
+   
     border-radius: 50%;
-    border: 1px solid #cbcbcb;   
-    background-color: white;
-    position: relative;
-    
+
+    &::after {
+        content: "";
+        display: none;
+        width: 8px;
+        height: 8px;
+        background: #f89513;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
+
+.order__checkbox-fake {
+    &::after {
+        content: "";
+        display: none;
+        width: 11px;
+        height: 9px;
+        background: url("../img/checkbox.png") no-repeat no-repeat;
+        background-size: cover;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 
 .order__radio-text {
     display: inline-block;

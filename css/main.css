@@ -676,6 +676,7 @@ ul {
   display: flex; }
 
 .order__label {
+  display: inline-block;
   margin-right: 20px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -685,7 +686,7 @@ ul {
     -ms-flex: 0;
     flex: 0;
     white-space: nowrap;
-    border: 1px solid red; }
+    margin-bottom: 10px; }
 
 .order__input {
   width: 100%;
@@ -701,8 +702,12 @@ ul {
   display: inline-block;
   vertical-align: middle;
   display: none; }
+  .order__hidden:checked + .order__radio-fake::after {
+    display: block; }
+  .order__hidden:checked + .order__checkbox-fake::after {
+    display: block; }
 
-.order__checkbox-fake {
+.order__radio-fake, .order__checkbox-fake {
   width: 15px;
   height: 15px;
   display: inline-block;
@@ -712,14 +717,34 @@ ul {
   position: relative; }
 
 .order__radio-fake {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 50%;
-  border: 1px solid #cbcbcb;
-  background-color: white;
-  position: relative; }
+  border-radius: 50%; }
+  .order__radio-fake::after {
+    content: "";
+    display: none;
+    width: 8px;
+    height: 8px;
+    background: #f89513;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.order__checkbox-fake::after {
+  content: "";
+  display: none;
+  width: 11px;
+  height: 9px;
+  background: url("../img/checkbox.png") no-repeat no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 .order__radio-text {
   display: inline-block;

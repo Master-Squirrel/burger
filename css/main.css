@@ -248,6 +248,8 @@ ul {
     background-color: #2f3234; }
   .btn_nocolor {
     background-color: transparent; }
+  .btn_nocolor:hover {
+    background-color: transparent; }
   .btn .btn__text {
     color: #fff;
     font-family: Ubuntu;

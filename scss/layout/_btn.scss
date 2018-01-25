@@ -2,7 +2,7 @@
 
     border-radius: 5px;
     padding: 10px 15px;
-    transition: .5s; // min-width: rem(98px);
+    transition: .5s; 
     display: inline-block;
 
     &:hover {
@@ -17,6 +17,11 @@
     &_nocolor {
         background-color: transparent;
     }
+
+    &_nocolor:hover {
+        background-color: transparent; 
+    }
+
     .btn__text {
         color: #fff;
         font-family: Ubuntu;

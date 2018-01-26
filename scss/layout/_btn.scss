@@ -1,7 +1,7 @@
 .btn {
 
-    border-radius: 5px;
-    padding: 10px 15px;
+    border-radius: rem(5px);
+    padding: rem(10px) rem(15px);
     transition: .5s; 
     display: inline-block;
 
@@ -16,16 +16,15 @@
     }
     &_nocolor {
         background-color: transparent;
-    }
 
-    &_nocolor:hover {
-        background-color: transparent; 
+        &:hover {
+            background-color: transparent; 
+        }
     }
-
     .btn__text {
         color: #fff;
         font-family: Ubuntu;
-        font-size: 13px;
+        font-size: rem(13px);
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;

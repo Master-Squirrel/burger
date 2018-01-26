@@ -9,9 +9,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    // height: 100px;
+    // height: rem(100px);
     background-color: black;
-    padding: 10px 0;
+    padding: rem(10px) 0;
 }
 .contacts__address {
     width: 50%;
@@ -19,11 +19,11 @@
 }
 .contacts__address-street {
     color: white;
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: "Ubuntu";
     font-weight: 300;
 
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 }
 .contacts__address-phone {
 
@@ -35,7 +35,7 @@
 }
 .contacts__item {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: rem(15px);
 }
 .network__link {
     text-decoration: none;
@@ -48,8 +48,8 @@
     opacity: 0.3;
     
 
-    width: 36px;
-    height: 36px;
+    width: rem(26px);
+    height: rem(26px);
 
     &:hover {
         opacity: 1;
@@ -57,7 +57,7 @@
 }
 .contacts__phonelink  {
     color: #e45028;
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: "Ubuntu";
     font-weight: bold;
     text-decoration: none;

@@ -8,7 +8,7 @@
     position: absolute;
     right: 0;
     height: 100%;
-    // border: 1px solid red;
+    // border: rem(1px) solid red;
     margin: 0;
 }
 .accordion__item {
@@ -18,8 +18,8 @@
 }
 .accordion__link {
     height: 100%;
-    width: 80px;
-    // border: 1px solid yellow;
+    width: rem(80px);
+    // border: rem(1px) solid yellow;
     background-position-x: 50%;
     background-position-y: 50%;
     background-size: cover;
@@ -29,8 +29,8 @@
 }
 
 .accordion__header {
-    font-family: Gagalin;
-    font-size: 42px;
+    font-family: Gagalin; 
+    font-size: rem(42px);
     text-transform: uppercase;
     text-align: left;
     vertical-align: top;
@@ -53,11 +53,11 @@
     display: none;
     font-family: "Ubuntu";
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     color: white;
     line-height: 1.714;
-    padding: 30px;
-    width: 400px;
+    padding: rem(30px);
+    width: rem(400px);
     height: 100%;
     position: relative;
     background-color: rgba($color: $dark, $alpha: 0.93);

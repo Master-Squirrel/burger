@@ -8,12 +8,12 @@
     flex-direction: column;    
     height: 100vh;
     width: 100%;
-    /* border: 1px solid red; */
+    /* border: rem(1px) solid red; */ 
     justify-content: center;
 }  
 .best__header {    
     color: black;
-    margin-bottom: 40px;  
+    margin-bottom: rem(40px);  
 }
 .best__list {
     text-align: center;
@@ -27,24 +27,24 @@
     display: inline-block;
 }
 .best__subheader {
-    font-size: 24px;
+    font-size: rem(24px);
     font-family: "Lifehack";
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
     color: $dark;
     line-height: 1.167;      
 }
 .best__images--meat {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 .best__images--handmade {
-    margin-bottom: 24px;
+    margin-bottom: rem(24px);
 }
 .best__images--natural {
-    margin-bottom: 34px;
+    margin-bottom: rem(34px);
 }
 .best__description {
     font-family: "Ubuntu";
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: $dark;
     opacity: 0.8;

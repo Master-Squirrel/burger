@@ -14,14 +14,23 @@
 
     background-color: $dark;
     opacity: 0.93;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+    }
 }
 .team__header-h2 {
-    font-size: rem(80px);
+    font-size: rem(80px);    
 }
 .team__area {
     // border: 1px solid yellow;
     //width: 70% из вебинара Владимира
     margin: 0 rem(100px) 0 rem(50px);
+    
+    @include tablets {
+    margin: 0 auto;
+    }
 }
 .team__header {
     margin-bottom: rem(50px);
@@ -31,6 +40,9 @@
 }
 .team__item {
     margin-left: rem(50px);
+    @include tablets {
+        margin: 0 auto;
+        }
 }
 .team__link {
     color: white;
@@ -48,6 +60,12 @@
     overflow: hidden;
     height: 0;
     margin: 10px 0 0 20px;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        margin: initial;
+
+    }
 }
 .team__item--active {
 
@@ -66,17 +84,29 @@
         -ms-transform: rotate(180deg);
         transform: rotate(180deg);
     }
+    @include tablets {
+        .member__image {
+        margin: 20px;
+        }
+    }
+
 }
 .member__description {
     font-family: "Ubuntu";
     font-size: 14px;
     color: white;
     margin-left: 15px;
+    
+    @include tablets {
+        margin: initial;
+    }
 }
 .member__status {  
     display: block;
     font-weight: bold;
     margin-bottom: 15px;
+
+    
 }
 .team__icon {
     display: inline-block;
@@ -88,10 +118,3 @@
 
 
 }
-// .team__item--active > .team__icon {
-//     -webkit-transform: rotate(180deg);
-//     -moz-transform: rotate(180deg);
-//     -o-transform: rotate(180deg);
-//     -ms-transform: rotate(180deg);
-//     transform: rotate(180deg);
-// }

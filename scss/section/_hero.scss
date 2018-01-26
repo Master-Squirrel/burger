@@ -5,7 +5,7 @@
 /* Бургерный блок */
 .burger{
     flex: .8; //Изменено с 1
-    // padding-bottom: 80px;
+    // padding-bottom: rem(80px);
 
     display: flex;   
     width: 100%;
@@ -16,12 +16,17 @@
     justify-content: center;
     width: 100%;
     align-self: center;
-    /* border: 1px solid red; */
-    /* width: 900px; */
+    /* border: rem(1px) solid red; */
+    /* width: rem(900px); */
+
+    @include tablets {
+     flex-direction: column;
+     
+    }
 }
 .burgerblock__image {
-    // width: 451px;
-    // height: 359px;
+    // width: rem(451px);
+    // height: rem(359px);
     overflow: hidden;
 }
 .burgerblock__image-img {
@@ -29,12 +34,20 @@
 }
 .burgerblock__block {
     width: 50%;
-
+    @include tablets {
+        width: 100%;
+        text-align: center;
+       }
 }
 .burgerblock__slogan {
     text-align: left;
-    // padding-left: 20px;
-    padding-top: 50px;
+    // padding-left: rem(20px);
+    padding-top: rem(50px);
+
+    @include tablets {
+        text-align: center;
+        padding-top: rem(30px);
+       }
 }
 
 .burger-slogan-naturalburger,
@@ -43,16 +56,16 @@
 }
 
 .burgerblock__block-wedo {
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: Gagalin;
     color: $yellow;
     line-height: 1.8;
 }
 
 .burgerblock__naturalburgers {
-    font-size: 65px;
+    font-size: rem(65px);
     font-family: LifeHack;
     color: #fff;
-    letter-spacing: -1.9px;
+    // letter-spacing: -1.rem(9px);
     line-height: 0.923;
 }

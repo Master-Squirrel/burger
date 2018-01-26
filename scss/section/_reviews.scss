@@ -36,7 +36,10 @@
     width: 100%;
     height: 100%;
     padding: rem(20px) 0 0 rem(20px);
-    background-color: rgba($color: #000000, $alpha: 0.6)
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .reviews__reviewername {
@@ -45,6 +48,12 @@
     color: rgb(255, 255, 255);
     line-height: 2.008;
     padding-top: 2vh;
+
+    @include phones {
+        font-size: rem(28px);
+        line-height: initial;
+        margin-bottom: rem(30px);
+    }
 }
 
 .reviews__reviewertext {
@@ -53,4 +62,8 @@
     color: rgb(255, 255, 255);
     line-height: 1.714;
     margin-bottom: rem(10px);
+
+    @include phones {
+     display: none;
+    }
 }

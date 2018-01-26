@@ -2,28 +2,46 @@
     background: url("../img/bg5.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
+
+    @include tablets {
+    text-align: center;
+     }
 }
+
 .contacts {
+    
+    background: url("../img/footer.jpg") center center no-repeat;
+    background-size: cover;
 
      position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    // height: rem(100px);
+    width: 100%;    
     background-color: black;
-    padding: rem(10px) 0;
+    // padding: rem(10px) 0;
 }
 .contacts__address {
     width: 50%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include phones {
+        width: 100%;
+        margin-top: rem(20px);
+     }
 }
 .contacts__address-street {
     color: white;
     font-size: rem(14px);
     font-family: "Ubuntu";
     font-weight: 300;
-
+    white-space: nowrap;
     margin-bottom: rem(10px);
+    
+    @include tablets {       
+        font-size: rem(13px); 
+     }
 }
 .contacts__address-phone {
 
@@ -32,6 +50,24 @@
     width: 50%;
     text-align: right;
     vertical-align: middle;
+    height: 100%;
+    
+    @include phones {
+       width: 100%;
+       text-align: center;
+       margin: rem(20px);
+     }
+}
+.contacts__menu {
+    height: rem(58px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include phones {
+    //    height: rem(115px);
+    justify-content: center;
+      }
 }
 .contacts__item {
     display: inline-block;
@@ -40,7 +76,7 @@
 .network__link {
     text-decoration: none;
     display: inline-block;
-    
+   
 }
 .networks__icon {
     display: inline-block;

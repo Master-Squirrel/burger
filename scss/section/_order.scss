@@ -12,9 +12,14 @@
 .order__title {
     color: $yellow;
     line-height: 0.889;
-    margin-bottom: rem(30px);
+    margin-bottom: rem(55px);
     @include tablets {
         font-size: 8vw;
+        margin-bottom: rem(50px);
+    }
+    @include phones {
+        font-size: 12vw;
+        line-height: 1.5;
         margin-bottom: rem(50px);
     }
 }
@@ -44,6 +49,11 @@
         }
         width: 70%;
     }
+    @include phones {
+     
+        width: 100%;
+        
+    }
 }
 
 .order__string {
@@ -52,6 +62,14 @@
     margin-bottom: rem(10px);
     .order__label:last-child {
         margin-right: 0;
+    }
+
+    
+     
+             @include phones {
+         justify-content: center;
+     
+        
     }
 }
 
@@ -64,6 +82,9 @@
         white-space: nowrap;
         margin-bottom: rem(10px); // border: rem(1px) solid red;
     }
+            @include phones {
+         justify-content: center;
+     }
 }
 
 .order__input {

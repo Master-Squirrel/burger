@@ -3,6 +3,21 @@
     background-size: cover;
     position: relative;
 }
+.menu__header {
+    color: white;
+    position: absolute;
+    top: rem(115px);
+    left: rem(100px);
+    
+    @include tablets {
+        left: rem(25px);
+    }
+    @include phones {
+        top: rem(60px);
+        left: rem(60px);
+    }
+    
+}
 .menu__accordion {
     display: flex;
     position: absolute;
@@ -26,6 +41,10 @@
     white-space: nowrap;
     text-decoration: none;
     position: relative;
+
+    @include phones {
+        width: rem(50px); 
+    }
 }
 
 .accordion__header {
@@ -41,6 +60,9 @@
     left: 50%;
     margin: 0;
     transform-origin: 0 0;
+    @include phones {
+        font-size: rem(32px);
+    }
 
     // -webkit-transform: rotate(-90deg);
     // -moz-transform: rotate(-90deg);

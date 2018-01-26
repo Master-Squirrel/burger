@@ -14,6 +14,10 @@
 .best__header {    
     color: black;
     margin-bottom: rem(40px);  
+    @include phones {
+        margin: rem(10px) 0 rem(10px) 0;
+        
+       }
 }
 .best__list {
     text-align: center;
@@ -21,10 +25,29 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        
+       }
 }
 .best__item {
     width: 33%;
     display: inline-block;
+    @include phones {
+       display: flex; 
+       width: 100%;
+       justify-content: flex-start;
+       margin-bottom: 35vw;
+
+       .best__item-data {
+           text-align: left;
+           width: 60%;
+       }
+       .best__item-img {
+            width: 40%;
+       }
+       }
 }
 .best__subheader {
     font-size: rem(24px);

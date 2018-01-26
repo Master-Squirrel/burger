@@ -5,7 +5,8 @@
 }
 .team {
     position: absolute;
-    display: block;
+    display: flex;
+    align-items: center;
     top: 0;
     bottom: 0;
     right: 0;
@@ -14,6 +15,8 @@
 
     background-color: $dark;
     opacity: 0.93;
+
+    
 
     @include tablets {
         width: 100%;
@@ -42,7 +45,8 @@
     margin-left: rem(50px);
     @include tablets {
         margin: 0 auto;
-        }
+    width: 90%;
+     }
 }
 .team__link {
     color: white;

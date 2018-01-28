@@ -1,86 +1,90 @@
 .section--team {
-    background: url("../img/bg3.jpg") center center no-repeat;
+    background: url("../img/bg3.jpg") 50% no-repeat;
     background-size: cover;
     position: relative;
-}
-.team {
-    position: absolute;
+
     display: flex;
-    align-items: center;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    flex-direction: column;
+}
 
-    width: 50%;
+.team {
+    // position: absolute;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // padding: 5% 2% 0 7%;
+    // top: 0;
+    // bottom: 0;
+    // right: 0;
+    // width: 50%;
+    // background-color: $dark;
+    // opacity: 0.93;
+    // @include tablets {
+    //     width: 100%;
+    //     text-align: center;
+    // }
 
-    background-color: $dark;
-    opacity: 0.93;
+    position: absolute;
+	right: 0;
+	top: 0;
+  bottom: 0;
+  width: 50%;
+	background: rgba(#2f3234, .93);
+  padding: 5% 2% 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
+  @include tablets {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.team__area {
+    // border: rem(1px) solid yellow;
+    //width: 70% из вебинара Владимира
+    // margin: 0 rem(rem(100px)) 0 rem(rem(50px));
     
 
+
     @include tablets {
-        width: 100%;
+        margin: 0 auto;
         text-align: center;
     }
 }
-.team__header-h2 {
-    font-size: rem(80px);    
-}
-.team__area {
-    // border: 1px solid yellow;
-    //width: 70% из вебинара Владимира
-    margin: 0 rem(100px) 0 rem(50px);
-    
-    @include tablets {
-    margin: 0 auto;
-    }
-}
 .team__header {
-    margin-bottom: rem(50px);
+    margin-bottom: 12%;
 }
 .team__header h2 {
     color: $yellow;
 }
-.team__item {
-    margin-left: rem(50px);
-    @include tablets {
-        margin: 0 auto;
-    width: 90%;
-     }
-}
-.team__link {
-    color: white;
-    font-family: Gagalin;
-    font-size: 14px;
-    text-decoration: none;
-    line-height: 2.008;
-    text-transform: uppercase;
-}
-.team__member {
-    display: flex;
-    color: white;
-    font-weight: 300;
-    font-family: Ubuntu;
-    overflow: hidden;
-    height: 0;
-    margin: 10px 0 0 20px;
-    @include tablets {
-        flex-direction: column;
-        align-items: center;
-        margin: initial;
 
+.team__item {
+    margin-bottom: rem(40px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include tablets {
+        margin: 0 auto; // width: 90%;
+        
     }
 }
-.team__item--active {
 
-    margin-bottom: 30px;
+
+.team__item--active {
+    margin-bottom: rem(30px);
+
     .team__link {
         color: $yellow;
     }
     .team__member {
         height: auto;
     }
-
     .team__icon {
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
@@ -90,35 +94,86 @@
     }
     @include tablets {
         .member__image {
-        margin: 20px;
+            margin: rem(20px);
         }
     }
-
 }
-.member__description {
-    font-family: "Ubuntu";
-    font-size: 14px;
+
+.team__link {
+    font-family: Gagalin;
+    color: #fff;
+    font-size: rem(14px);
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    margin-bottom: rem(20px);
+    align-items: center;
+
+    @include tablets() {
+        font-size: rem(25px);
+      }
+}
+
+.team__member {
+    display: flex;
     color: white;
-    margin-left: 15px;
-    
+    font-weight: 300;
+    font-family: Ubuntu;
+    overflow: hidden;
+    height: 0;
+    padding-top: rem(14px);
+   
     @include tablets {
+        flex-direction: column;
+        align-items: center;
         margin: initial;
     }
 }
-.member__status {  
-    display: block;
-    font-weight: bold;
-    margin-bottom: 15px;
 
-    
+
+.member__description {
+    width: 70%;
+    font-family: "Ubuntu";
+    font-size: rem(14px);
+    color: white;
+    margin-left: rem(15px);
+    text-align: left;
+    @include tablets {
+        margin: initial;
+        text-align: center;
+    }
 }
+
+.member__status {
+    display: block;
+    font-weight: bold;     
+	font-size: rem(14px);
+	color: #fff;
+    margin-bottom: rem(14px);
+}
+
 .team__icon {
-    display: inline-block;
-    // vertical-align: middle;
-
+    display: inline-block; // vertical-align: middle;
     fill: $yellow;
-    width: 10px;
-    height: 10px;
-
-
+    width: rem(10px);
+    height: rem(10px);
+    transition: .3s;
+}
+.member__pic {
+	text-align: center;
+	width: 30%;
+}
+.member__img {
+	width: rem(100px);
+    height: rem(100px);
+        
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+    border-radius: 50%;
+}	
+.member__text {
+	
+	color: #fff;
+	font-size: rem(14px);
 }

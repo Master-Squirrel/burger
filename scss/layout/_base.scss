@@ -76,6 +76,11 @@ h2 {
     left: 50%;
     text-align: center;
     transform: translateX(-50%);
+
+    @include tablets {
+        bottom: rem(10px);
+    }
+
 }
 
 ul {

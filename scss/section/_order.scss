@@ -12,9 +12,9 @@
 .order__title {
     color: $yellow;
     line-height: 0.889;
-    margin-bottom: rem(55px);
+    margin-bottom: rem(45px);
     @include tablets {
-        font-size: 8vw;
+        
         margin-bottom: rem(50px);
     }
     @include phones {
@@ -59,12 +59,23 @@
 .order__string {
     width: 100%;
     display: flex;
-    margin-bottom: rem(10px);
+    margin-bottom: rem(15px);
     .order__label:last-child {
         margin-right: 0;
     }
 
-    
+    @include tablets {
+        
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-top: rem(20px);
+        }
+
+        &:nth-of-type(3) {
+            margin-top: initial;
+        }
+    }
      
              @include phones {
          justify-content: center;
@@ -80,7 +91,7 @@
     &_radio {
         flex: 0;
         white-space: nowrap;
-        margin-bottom: rem(10px); // border: rem(1px) solid red;
+        // margin-bottom: rem(10px); // border: rem(1px) solid red;
     }
             @include phones {
          justify-content: center;
@@ -94,7 +105,7 @@
     border-radius: rem(5px);
     color: black;
     padding: rem(10px);
-    margin-top: rem(10px);
+    margin-top: rem(5px);
 }
 
 .order__hidden {
@@ -155,4 +166,7 @@
 .order__radio-text {
     display: inline-block;
     vertical-align: middle;
+}
+.order__textarea {
+    height: rem(110px);
 }

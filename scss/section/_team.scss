@@ -56,10 +56,11 @@
     }
 }
 .team__header {
-    margin-bottom: 12%;
-}
-.team__header h2 {
+    
+} 
+.h2--team { 
     color: $yellow;
+    margin-bottom: 12%;
 }
 
 .team__item {
@@ -159,14 +160,13 @@
     height: rem(10px);
     transition: .3s;
 }
-.member__pic {
-	text-align: center;
-	width: 30%;
-}
+
 .member__img {
 	width: rem(100px);
     height: rem(100px);
-        
+
+    text-align: center;
+
     background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;

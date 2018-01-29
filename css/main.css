@@ -491,7 +491,8 @@ p {
   background-color: rgba(0, 0, 0, 0.6); }
   @media (max-width: 768px) {
     .reviews__hoverblock {
-      text-align: center; } }
+      text-align: center;
+      padding: 0.3125rem 0 0 0.3125rem; } }
 
 .reviews__reviewername {
   font-size: 0.875rem;
@@ -499,6 +500,9 @@ p {
   color: white;
   line-height: 2.008;
   padding-top: 2vh; }
+  @media (max-width: 768px) {
+    .reviews__reviewername {
+      padding: 0; } }
   @media (max-width: 480px) {
     .reviews__reviewername {
       font-size: 1.75rem;
@@ -558,11 +562,9 @@ p {
     margin: 0 auto;
     text-align: center; } }
 
-.team__header {
+.h2--team {
+  color: #f8b43a;
   margin-bottom: 12%; }
-
-.team__header h2 {
-  color: #f8b43a; }
 
 .team__item {
   margin-bottom: 2.5rem; }
@@ -654,13 +656,10 @@ p {
   -o-transition: .3s;
   transition: .3s; }
 
-.member__pic {
-  text-align: center;
-  width: 30%; }
-
 .member__img {
   width: 6.25rem;
   height: 6.25rem;
+  text-align: center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

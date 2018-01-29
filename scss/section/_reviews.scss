@@ -39,6 +39,7 @@
     background-color: rgba($color: #000000, $alpha: 0.6);
     @include tablets {
         text-align: center;
+        padding: rem(5px) 0 0 rem(5px);
     }
 }
 
@@ -48,7 +49,9 @@
     color: rgb(255, 255, 255);
     line-height: 2.008;
     padding-top: 2vh;
-
+    @include tablets {
+        padding: 0;
+    }
     @include phones {
         font-size: rem(28px);
         line-height: initial;

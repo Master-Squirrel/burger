@@ -97,11 +97,13 @@
     margin-top: rem(10px);
 }
 
-.order__hidden {
+.order__hidden { 
+
     display: inline-block;
     vertical-align: middle;
 
-     display: none; // @include circle (rem(4px), #fff);
+    //  display: none; 
+
     &:checked+.order__radio-fake::after {
         display: block;
     }

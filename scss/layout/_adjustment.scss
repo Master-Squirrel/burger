@@ -12,3 +12,11 @@
 	width: 1px !important; 
 	overflow: hidden;
 } 
+button {
+    background: initial;
+    border: initial;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}

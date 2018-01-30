@@ -149,6 +149,12 @@ p {
   width: 1px !important;
   overflow: hidden; }
 
+button {
+  background: initial;
+  border: initial; }
+  button:hover {
+    cursor: pointer; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -12,7 +12,9 @@
     width: rem(92px);
     height: rem(69px);
 }
-
+.header__logo-image {
+    max-width: 100%;
+}
 .menu {
     margin-left: auto;
 }

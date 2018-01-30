@@ -5,9 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Бургеры</title>
+    <title>Бургеры от Николая</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="./js/svg4everybody.js"></script>
     <script>
         svg4everybody();
@@ -23,7 +31,7 @@
                     <div class="logo">
                         <img src="img/logo.png" alt="" class="header__logo-image">
                     </div>
-                    <div class="menu">
+                    <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <a href="#" class="menu__link">о нас</a>
@@ -44,12 +52,14 @@
                                 <a href="#" class="menu__link">КОНТАКТЫ</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
 
                     <div class="btn btn_color_orange">
                         <a href="#" class="btn__text">ЗАКАЗАТЬ</a>
                     </div>
-                    <a href="1" class="mob-menu"> <div class="mob-menu__icon"></div></a>
+                    <a href="1" class="mob-menu">
+                        <div class="mob-menu__icon"></div>
+                    </a>
                 </header>
                 <div class="burger">
                     <div class="burgerblock">
@@ -57,8 +67,10 @@
                             <img class="burgerblock__image-img" src="img/burger-main.png" alt="">
                         </div>
                         <div class="burgerblock__block burgerblock__slogan">
+                            <h2 class="visually-hidden">Мы делаем натуральные бургеры</h2>
                             <div class="burgerblock__block-wedo">Мы делаем</div>
                             <div class="burgerblock__naturalburgers">натуральные бургеры
+                             
                             </div>
                         </div>
                     </div>
@@ -79,31 +91,31 @@
                     <ul class="best__list">
                         <li class="best__item">
                             <div class="best__item-img">
-                            <img class="best__images best__images--meat" src="img/icons/meat.svg" alt="">
+                                <img class="best__images best__images--meat" src="img/icons/meat.svg" alt="">
                             </div>
                             <div class="best__item-data">
-                            <div class="best__subheader">100% свежее мясо</div>
-                            <div class="best__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                                <div class="best__subheader">100% свежее мясо</div>
+                                <div class="best__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
                             </div>
                         </li>
                         <li class="best__item">
-                                <div class="best__item-img">
-                            <img class="best__images best__images--handmade" src="img/icons/hand.svg" alt="">
+                            <div class="best__item-img">
+                                <img class="best__images best__images--handmade" src="img/icons/hand.svg" alt="">
                             </div>
                             <div class="best__item-data">
-                            <div class="best__subheader">Ручная сборка</div>
-                            <div class="best__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
-                                притягивает сюжетный реформаторский пафос.</div>
+                                <div class="best__subheader">Ручная сборка</div>
+                                <div class="best__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
+                                    притягивает сюжетный реформаторский пафос.</div>
                             </div>
                         </li>
                         <li class="best__item">
-                                <div class="best__item-img">
-                            <img class="best__images best__images--natural" src="img/icons/natural.svg" alt="">
+                            <div class="best__item-img">
+                                <img class="best__images best__images--natural" src="img/icons/natural.svg" alt="">
                             </div>
                             <div class="best__item-data">
-                            <div class="best__subheader">Натуральные ингредиенты</div>
-                            <div class="best__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-                        </div>
+                                <div class="best__subheader">Натуральные ингредиенты</div>
+                                <div class="best__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -112,23 +124,24 @@
         <section class="section section--team">
             <div class="team">
                 <div class="team__area">
-                    
-                        <h2 class="h2--team">КОМАНДА</h2>
-                    
+
+                    <h2 class="h2--team">КОМАНДА</h2>
+
                     <ul class="team__accordion">
-                        <li class="team__item ">
+                        <li class="team__item">
                             <svg class="team__icon">
                                 <use xlink:href="img/triangle.svg#triangle"></use>
                             </svg>
 
                             <a href="1" class="team__link">Дэниэл Редклиф</a>
-                            <div class="team__member member">                              
-                                
+                            <div class="team__member member">
+
                                 <div class="member__img" style="background-image: url('./img/members/richard.jpg')"></div>
-                              
+
                                 <div class="member__description">
                                     <div class="member__status">Оператор</div>
                                     <div class="member__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                </div>
                                 </div>
                         </li>
                         <li class="team__item team__item--active">
@@ -139,14 +152,15 @@
 
                             <a href="2" class="team__link">Ричард Джеймс</a>
                             <div class="team__member member">
-                                 
-                                            <div class="member__img" style="background-image: url('./img/members/richard.jpg')"></div>
-                                       
+
+                                <div class="member__img" style="background-image: url('./img/members/richard.jpg')"></div>
+
 
                                 <div class="member__description">
                                     <div class="member__status">Оператор</div>
                                     <div class="member__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                                 </div>
+                            </div>
                         </li>
                         <li class="team__item">
 
@@ -155,14 +169,15 @@
                             </svg>
                             <a href="3" class="team__link">Джейк Финн</a>
                             <div class="team__member member">
-                                   
-                                            <div class="member__img" style="background-image: url('./img/members/richard.jpg')"></div>
-                                       
+
+                                <div class="member__img" style="background-image: url('./img/members/richard.jpg')"></div>
+
 
                                 <div class="member__description">
                                     <div class="member__status">Оператор</div>
                                     <div class="member__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                                 </div>
+                            </div>
                         </li>
                         <li class="team__item">
                             <svg class="team__icon">
@@ -171,25 +186,28 @@
 
                             <a href="4" class="team__link">Николай Иванов</a>
                             <div class="team__member member">
-                                  
-                                            <div class="member__img" style="background-image: url('./img/members/richard.jpg')"></div>
-                                        
+
+                                <div class="member__img" style="background-image: url('./img/members/richard.jpg')"></div>
+
 
                                 <div class="member__description">
                                     <div class="member__status">Оператор</div>
                                     <div class="member__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                                 </div>
+                            </div>
                         </li>
                     </ul>
                     </div>
                     </div>
         </section>
 
-        <!-- accordion__item--active -->
+        
         <section class="section section--menu">
-            <div class="menu__header"><h2>Меню</h2></div>
+            <div class="menu__header">
+                <h2>Меню</h2>
+            </div>
             <ul class="menu__accordion accordion">
-                <li class="accordion__item">
+                <li class="accordion__item accordion__item--active">
                     <a href="1" class="accordion__link" style="background-image: url(img/menu/1.jpg)">
                         <div class="accordion__header">Для мясоедов</div>
 
@@ -239,6 +257,7 @@
 
         </section>
         <section class="section section--reviews">
+            <h2 class="reviews__header visually-hidden ">Отзывы</h2>
             <ul class="reviews">
                 <li class="reviews__block" style="background-image: url(img/reviewers/1.jpg)">
                     <div class="reviews__hoverblock">
@@ -388,7 +407,7 @@
                         <div class="order__string">
                             <label class="order__label">
                                 Комментарий
-                                <textarea class="order__input order__textarea" name="" id="" cols="30" rows="5"></textarea>
+                                <textarea class="order__input order__textarea" name="formComments" id="formCommentsID" cols="30" rows="5"></textarea>
                             </label>
                         </div>
                         <div class="order__string">
@@ -417,8 +436,8 @@
                                 <button type="submit" class="btn__text">ЗАКАЗАТЬ</button>
                             </div>
                             <div class="btn btn__nocolor">
-                                    <button type="reset" href="#" class="btn__text">Очистить</button>
-                                </div>
+                                <button type="reset" class="btn__text">Очистить</button>
+                            </div>
                         </div>
 
                     </div>
@@ -428,7 +447,7 @@
         </section>
 
         <section class="section section--contacts">
-
+<h2 class="visually-hidden">Наш адрес</h2>
             <footer class="contacts">
                 <div class="container container--flex container--contacts">
                     <div class="contacts__address">
@@ -506,7 +525,7 @@
             </li>
         </ul>
 
-       
-        </body>
+
+</body>
 
 </html>

@@ -5,6 +5,9 @@
     transition: .5s; 
     display: inline-block;
 
+    &:focus {
+        background-color: $dark;        
+    }
     &:hover {
         background-color: black; //darken ($orange, 7%);
     }
@@ -28,5 +31,10 @@
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
+
+        &:focus {
+            outline: none;
+            
+        }
     }
 }

@@ -19,7 +19,7 @@
 
     background-position:  center center;
     background-repeat: no-repeat;
-
+    filter: grayscale(100%);
     @include tablets {
         width: 50%;
         height: 25%;
@@ -48,7 +48,7 @@
     font-family: "Gagalin";
     color: rgb(255, 255, 255);
     line-height: 2.008;
-    padding-top: 2vh;
+    margin-top: 2vh;
     @include tablets {
         padding: 0;
     }

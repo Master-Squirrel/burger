@@ -50,6 +50,7 @@ body {
   font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   position: relative;
   color: #000; }
 
@@ -291,6 +292,8 @@ button {
   -o-transition: .5s;
   transition: .5s;
   display: inline-block; }
+  .btn:focus {
+    background-color: #2f3234; }
   .btn:hover {
     background-color: black; }
   .btn_color_orange {
@@ -308,6 +311,8 @@ button {
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase; }
+    .btn .btn__text:focus {
+      outline: none; }
 
 .section--start {
   background: url("../img/bg1.jpg") center center no-repeat;
@@ -360,7 +365,7 @@ button {
 
 .burgerblock__slogan {
   text-align: left;
-  padding-top: 3.125rem; }
+  margin-top: 3.125rem; }
   @media (max-width: 768px) {
     .burgerblock__slogan {
       text-align: center;
@@ -500,7 +505,9 @@ button {
   position: relative;
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
   @media (max-width: 768px) {
     .reviews__block {
       width: 50%;
@@ -526,7 +533,7 @@ button {
   font-family: "Gagalin";
   color: white;
   line-height: 2.008;
-  padding-top: 2vh; }
+  margin-top: 2vh; }
   @media (max-width: 768px) {
     .reviews__reviewername {
       padding: 0; } }
@@ -644,7 +651,7 @@ button {
   font-family: Ubuntu;
   overflow: hidden;
   height: 0;
-  padding-top: 0.875rem; }
+  margin-top: 0.875rem; }
   @media (max-width: 768px) {
     .team__member {
       -webkit-box-orient: vertical;
@@ -972,6 +979,7 @@ button {
       justify-content: center; } }
 
 .order__label {
+  outline: none;
   display: inline-block;
   margin-right: 1.25rem;
   -webkit-box-flex: 1;
@@ -996,13 +1004,16 @@ button {
   color: black;
   padding: 0.625rem;
   margin-top: 0.3125rem; }
+  .order__input:focus {
+    border: 1px solid #e35028;
+    outline: none; }
 
 .order__hidden {
   display: inline-block;
   vertical-align: middle; }
-  .order__hidden:checked + .order__radio-fake::after {
+  .order__hidden:checked + .order__radio-fake::after, .order__hidden:focus + .order__radio-fake::after {
     display: block; }
-  .order__hidden:checked + .order__checkbox-fake::after {
+  .order__hidden:checked + .order__checkbox-fake::after, .order__hidden:focus + .order__checkbox-fake::after {
     display: block; }
 
 .order__radio-fake,
@@ -1050,7 +1061,8 @@ button {
   vertical-align: middle; }
 
 .order__textarea {
-  height: 6.875rem; }
+  height: 6.875rem;
+  resize: none; }
 
 .mob-menu__icon {
   display: none;

@@ -1091,6 +1091,9 @@ button {
   background: -webkit-linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
   background: -o-linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
   background: linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -1108,7 +1111,22 @@ button {
 .slider__right,
 .slider__center {
   position: relative;
-  border: 1px solid red; }
+  border: 1px solid red;
+  height: 100%; }
+
+.slider__links {
+  display: block;
+  position: absolute;
+  top: 50%; }
+
+.slider__links--left {
+  left: 10px; }
+
+.slider__links--right {
+  right: 10px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .slider__item {
   height: 100%; }
@@ -1201,20 +1219,6 @@ button {
 
 .slider__text-sum-figure {
   font-size: 4.5rem; }
-
-.slider__links {
-  display: block;
-  position: absolute;
-  top: 50%; }
-
-.slider__links--left {
-  left: 10px; }
-
-.slider__links--right {
-  right: 10px;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
 
 .mob-menu__icon {
   display: none;

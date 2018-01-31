@@ -1,5 +1,6 @@
  .section--slider {
      background: linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
+     justify-content: center;
      align-items: center;
  }
 
@@ -19,7 +20,22 @@
  .slider__center {
      position: relative;
      border: 1px solid red;
+     height: 100%;
  }
+ .slider__links {
+    display: block;
+    position: absolute;
+    top: 50%;
+}
+
+.slider__links--left {
+    left: 10px;
+}
+
+.slider__links--right {
+    right: 10px;
+    transform: rotate(180deg);
+}
  .slider__list {
     //  display: block;
     //  width: 100%;
@@ -111,17 +127,4 @@
 .slider__text-sum-figure {
     font-size: rem(72px);
 }
- .slider__links {
-     display: block;
-     position: absolute;
-     top: 50%;
- }
-
- .slider__links--left {
-     left: 10px;
- }
-
- .slider__links--right {
-     right: 10px;
-     transform: rotate(180deg);
- }
+ 

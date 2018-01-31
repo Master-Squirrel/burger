@@ -1,0 +1,14 @@
+ .ingr {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .ingr__text {
+     font-size: rem(14px);
+     font-family: "Gagalin";
+     color: rgb(255, 255, 255);
+     line-height: 2.008;
+     text-align: center;
+ }

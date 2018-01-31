@@ -1,0 +1,16 @@
+ .section--slider {
+     background: linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
+     position: relative;
+ }
+
+ .slider__links {
+     position: absolute;
+     top: 50%;
+ }
+ .slider__links--left {
+     left: 50px;
+ }
+ .slider__links--right {
+    right: 50px;
+    transform: rotate(180deg);
+}

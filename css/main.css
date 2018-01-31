@@ -1064,6 +1064,26 @@ button {
   height: 6.875rem;
   resize: none; }
 
+.section--slider {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(50%, #eb8c38), color-stop(75%, #f9b43b));
+  background: -webkit-linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
+  background: -o-linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
+  background: linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
+  position: relative; }
+
+.slider__links {
+  position: absolute;
+  top: 50%; }
+
+.slider__links--left {
+  left: 50px; }
+
+.slider__links--right {
+  right: 50px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
 .mob-menu__icon {
   display: none;
   position: relative;

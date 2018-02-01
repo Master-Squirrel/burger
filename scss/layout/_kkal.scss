@@ -1,0 +1,34 @@
+.kkal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+   
+    
+    left: 0;
+    bottom: 0;
+    opacity: .5;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(14px);
+    font-family: "Gagalin";
+    color: white;
+    // line-height: 1.714;
+}
+.kkal__img {
+    background: url("../img/slider/kkal.png") center center no-repeat;
+
+    font-size: rem(20px);
+    display: flex;
+justify-content: center;
+align-items: center;
+    width: rem(75px);
+    height: rem(75px);
+}
+.kkal__figures {
+    margin-top: rem(15px);
+}
+.kkal__text {  
+   
+  
+}

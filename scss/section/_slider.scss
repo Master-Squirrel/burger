@@ -1,28 +1,28 @@
- .section--slider {
-     background: linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
-     justify-content: center;
-     align-items: center;
- }
+.section--slider {
+    background: linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
+    justify-content: center;
+    align-items: center;
+}
 
- .slider {
-     height: rem(475px);
-     width: 100%;
-     max-width: 1100px;
- }
+.slider {
+    height: rem(475px);
+    width: 100%;
+    max-width: 1100px;
+}
 
- .slider__left,
- .slider__right {
-     width: 5%;
- }
+.slider__left,
+.slider__right {
+    width: 5%;
+}
 
- .slider__left,
- .slider__right,
- .slider__center {
-     position: relative;
-     border: 1px solid red;
-     height: 100%;
- }
- .slider__links {
+.slider__center,
+.slider__left,
+.slider__right {
+    position: relative;
+    border: 1px solid red;
+    height: 100%;
+}
+.slider__links {
     display: block;
     position: absolute;
     top: 50%;
@@ -36,33 +36,33 @@
     right: 10px;
     transform: rotate(180deg);
 }
- .slider__list {
+.slider__list {
     //  display: block;
     //  width: 100%;
     //  height: 100%;
- }
+}
 .slider__item {
     // display: block;
     // width: 100%;
     height: 100%;
 }
- .slider__center {
-     
-     width: 100%;
-     height: 100%;
-     display: flex;
-     justify-content: center;
- }
+.slider__center {
 
- .slider__burger {
-     position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     overflow: hidden;
-     width: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__burger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50%;
     //  margin-bottom: rem(40px;
- }
+}
 .slider__menu {
     position: absolute;
     width: rem(90px);
@@ -71,60 +71,106 @@
     border-radius: 5px;
     top: 0;
     left: 0;
+
+    &:hover{
+        background-color: #e35028;
+       cursor: pointer;
+
+       +.slider__submenu {
+           display: flex;
+       }
+    }
 }
 .slider__submenu {
+    display: none;
+    
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     width: rem(270px);
     left: rem(90px);
     top: 0;
-    height: rem(340px);
+    // height: rem(340px);
     border-radius: 5px;
     background-color: rgba($color: #ffffff, $alpha: 0.8);
+    padding: rem(20px) rem(20px);
 }
- .slider__image {
-     max-width: 100%;
- }
+.submenu__pos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: rem(5px);
 
- .slider__text {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     width: 50%;
- }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.submenu__pos-ingr {
+    flex: 1;
+margin-left: rem(10px);
+   
 
- .slider__text-header,
- .slider__text-desc,
- .slider__text-price {
-     width: 100%;
+    font-size: rem(14px);
+    font-family: "Ubuntu";
+    color: rgb(47, 50, 52);
+}
+.submenu__pos-mass {
+    font-size: rem(14px);
+    font-family: "Ubuntu";
+    color: rgb(47, 50, 52);
+
+}
+
+.submenu__pos-icon {
+    background-position: center center; 
+    background-repeat:  no-repeat;
+    width: rem(45px);
+    height: rem(45px);
+}
+.slider__image {
+    max-width: 100%;
+}
+
+.slider__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.slider__text-desc,
+.slider__text-header,
+.slider__text-price {
+    width: 100%;
     //  height: 33%;
-     vertical-align: middle;
-     text-align: left;
-     margin: 20px 0;
- }
+    vertical-align: middle;
+    text-align: left;
+    margin: 20px 0;
+}
 
- .h2--slider {
-     color: white;
-     line-height: 0.889;
-     font-size: rem(72px);
-     text-align: left;
- }
+.h2--slider {
+    color: white;
+    line-height: 0.889;
+    font-size: rem(72px);
+    text-align: left;
+}
 
- .slider__text-desc {
-     font-size: rem(14px);
-     font-family: "Ubuntu";
-     color: rgb(255, 255, 255);
-     line-height: 1.714;
-     text-align: left;
- }
+.slider__text-desc {
+    font-size: rem(14px);
+    font-family: "Ubuntu";
+    color: rgb(255, 255, 255);
+    line-height: 1.714;
+    text-align: left;
+}
 
- .slider__text-sum {
-     display: inline-block;
-     font-size: rem(30px);
-     font-family: "Gagalin";
-     color: rgb(227, 80, 40);
-     line-height: 0.39;
- }
+.slider__text-sum {
+    display: inline-block;
+    font-size: rem(30px);
+    font-family: "Gagalin";
+    color: rgb(227, 80, 40);
+    line-height: 0.39;
+}
 .slider__text-sum-figure {
     font-size: rem(72px);
 }
- 

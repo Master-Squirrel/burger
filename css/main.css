@@ -336,6 +336,42 @@ button {
   line-height: 2.008;
   text-align: center; }
 
+.kkal {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-family: "Gagalin";
+  color: white; }
+
+.kkal__img {
+  background: url("../img/slider/kkal.png") center center no-repeat;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4.6875rem;
+  height: 4.6875rem; }
+
+.kkal__figures {
+  margin-top: 0.9375rem; }
+
 .section--start {
   background: url("../img/bg1.jpg") center center no-repeat;
   background-size: cover; }
@@ -1107,9 +1143,9 @@ button {
 .slider__right {
   width: 5%; }
 
+.slider__center,
 .slider__left,
-.slider__right,
-.slider__center {
+.slider__right {
   position: relative;
   border: 1px solid red;
   height: 100%; }
@@ -1163,15 +1199,65 @@ button {
   border-radius: 5px;
   top: 0;
   left: 0; }
+  .slider__menu:hover {
+    background-color: #e35028;
+    cursor: pointer; }
+    .slider__menu:hover + .slider__submenu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
 
 .slider__submenu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   width: 16.875rem;
   left: 5.625rem;
   top: 0;
-  height: 21.25rem;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.25rem 1.25rem; }
+
+.submenu__pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.3125rem; }
+  .submenu__pos:last-child {
+    margin-bottom: 0; }
+
+.submenu__pos-ingr {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 0.625rem;
+  font-size: 0.875rem;
+  font-family: "Ubuntu";
+  color: #2f3234; }
+
+.submenu__pos-mass {
+  font-size: 0.875rem;
+  font-family: "Ubuntu";
+  color: #2f3234; }
+
+.submenu__pos-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 2.8125rem;
+  height: 2.8125rem; }
 
 .slider__image {
   max-width: 100%; }
@@ -1189,8 +1275,8 @@ button {
   justify-content: center;
   width: 50%; }
 
-.slider__text-header,
 .slider__text-desc,
+.slider__text-header,
 .slider__text-price {
   width: 100%;
   vertical-align: middle;

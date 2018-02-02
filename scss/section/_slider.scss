@@ -28,7 +28,7 @@ left: -50px;
 
 .slider__center {
     position: relative;
-    border: 1px solid red;
+    
     height: 100%;
 }
 .slider__links {
@@ -49,9 +49,11 @@ left: -50px;
 
  
 height: 100%;
-
+left: 0;
 position: absolute;
 display: flex;
+
+transition: 1s;
 
 }
 .slider__item {
@@ -60,7 +62,7 @@ display: flex;
     height: 100%;
     width: 1100px;
     
-    transition: 1s;
+
 }
 .slider__center {
 

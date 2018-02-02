@@ -459,7 +459,7 @@ button {
   background: url("../img/bg2.jpg") center center no-repeat;
   background-size: cover; }
 
-.best {
+.best_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -9,23 +9,18 @@
 
 .team {
 
+    //     position: absolute;
+    // 	right: 0;
+    // 	top: 0;
+    //   bottom: 0;
+    //   width: 50%;
+    // 	background: rgba(#2f3234, .93);
+    //   padding: 5% 2% 0 7%;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   flex-direction: column;
 
-//     position: absolute;
-// 	right: 0;
-// 	top: 0;
-//   bottom: 0;
-//   width: 50%;
-// 	background: rgba(#2f3234, .93);
-//   padding: 5% 2% 0 7%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-
-  @include tablets {
-    width: 100%;
-    padding: 0;
-  }
 }
 
 .team__area {
@@ -33,27 +28,26 @@
     //width: 70% из вебинара Владимира
     // margin: 0 rem(rem(100px)) 0 rem(rem(50px));
     position: absolute;
-	right: 0;
-	top: 0;
-  bottom: 0;
-  width: 50%;
-	background: rgba(#2f3234, .93);
-  padding: 5% 2% 0 7%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(#2f3234, .93);
+    padding: 5% 2% 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     @include tablets {
+        width: 100%;
+        padding: 0; 
         margin: 0 auto;
         text-align: center;
     }
 }
-.team__header {
-    
-} 
-.h2--team { 
+
+.title__team {
     color: $yellow;
     margin-bottom: 12%;
 }
@@ -67,10 +61,9 @@
 
     @include tablets {
         margin: 0 auto; // width: 90%;
-        
+
     }
 }
-
 
 .team__item--active {
     margin-bottom: rem(30px);
@@ -107,7 +100,7 @@
 
     @include tablets() {
         font-size: rem(25px);
-      }
+    }
 }
 
 .team__member {
@@ -118,14 +111,13 @@
     overflow: hidden;
     height: 0;
     margin-top: rem(14px);
-   
+
     @include tablets {
         flex-direction: column;
         align-items: center;
         margin: initial;
     }
 }
-
 
 .member__description {
     width: 70%;
@@ -142,9 +134,9 @@
 
 .member__status {
     display: block;
-    font-weight: bold;     
-	font-size: rem(14px);
-	color: #fff;
+    font-weight: bold;
+    font-size: rem(14px);
+    color: #fff;
     margin-bottom: rem(14px);
 }
 
@@ -153,22 +145,22 @@
     fill: $yellow;
     width: rem(10px);
     height: rem(10px);
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .member__img {
-	width: rem(100px);
+    width: rem(100px);
     height: rem(100px);
 
     text-align: center;
 
     background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 50%;
-}	
+}
 .member__text {
-	
-	color: #fff;
-	font-size: rem(14px);
+
+    color: #fff;
+    font-size: rem(14px);
 }

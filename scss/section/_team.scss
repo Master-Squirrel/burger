@@ -1,4 +1,4 @@
-.section--team {
+.team {
     background: url("../img/bg3.jpg") 50% no-repeat;
     background-size: cover;
     position: relative;
@@ -10,17 +10,17 @@
 .team {
 
 
-    position: absolute;
-	right: 0;
-	top: 0;
-  bottom: 0;
-  width: 50%;
-	background: rgba(#2f3234, .93);
-  padding: 5% 2% 0 7%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+//     position: absolute;
+// 	right: 0;
+// 	top: 0;
+//   bottom: 0;
+//   width: 50%;
+// 	background: rgba(#2f3234, .93);
+//   padding: 5% 2% 0 7%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
 
   @include tablets {
     width: 100%;
@@ -32,7 +32,17 @@
     // border: rem(1px) solid yellow;
     //width: 70% из вебинара Владимира
     // margin: 0 rem(rem(100px)) 0 rem(rem(50px));
-    
+    position: absolute;
+	right: 0;
+	top: 0;
+  bottom: 0;
+  width: 50%;
+	background: rgba(#2f3234, .93);
+  padding: 5% 2% 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
 
     @include tablets {

@@ -1,10 +1,10 @@
-.section--slider {
+.slider {
     background: linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
     justify-content: center;
     align-items: center;
 }
 
-.slider {
+.slider-container {
     height: rem(475px);
     width: 100%;
     max-width: 1100px;
@@ -149,8 +149,8 @@ margin-left: rem(10px);
     margin: 20px 0;
 }
 
-.h2--slider {
-    color: white;
+.title {
+    color: white; 
     line-height: 0.889;
     font-size: rem(72px);
     text-align: left;
@@ -169,7 +169,7 @@ margin-left: rem(10px);
     font-size: rem(30px);
     font-family: "Gagalin";
     color: rgb(227, 80, 40);
-    line-height: 0.39;
+
 }
 .slider__text-sum-figure {
     font-size: rem(72px);

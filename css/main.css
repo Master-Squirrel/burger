@@ -178,7 +178,7 @@ button {
 .header__logo-image {
   max-width: 100%; }
 
-.menu {
+.menu__nav {
   margin-left: auto; }
 
 .menu__list {
@@ -291,11 +291,18 @@ button {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  display: inline-block; }
+  display: inline-block;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase; }
   .btn:focus {
     background-color: #2f3234; }
   .btn:hover {
-    background-color: black; }
+    background-color: black;
+    color: white; }
   .btn_color_orange {
     background-color: #e25028; }
   .btn_color_dark {
@@ -304,15 +311,6 @@ button {
     background-color: transparent; }
     .btn_nocolor:hover {
       background-color: transparent; }
-  .btn .btn__text {
-    color: #fff;
-    font-family: Ubuntu;
-    font-size: 0.8125rem;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .btn .btn__text:focus {
-      outline: none; }
 
 .ingr {
   display: -webkit-box;
@@ -372,7 +370,7 @@ button {
 .kkal__figures {
   margin-top: 0.9375rem; }
 
-.section--start {
+.start {
   background: url("../img/bg1.jpg") center center no-repeat;
   background-size: cover; }
 
@@ -449,7 +447,7 @@ button {
     .burgerblock__naturalburgers {
       margin: 0 10%; } }
 
-.section--best {
+.best {
   background: url("../img/bg2.jpg") center center no-repeat;
   background-size: cover; }
 
@@ -538,14 +536,14 @@ button {
   opacity: 0.8;
   line-height: 1.714; }
 
-.section--reviews {
+.reviews {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   vertical-align: middle;
   width: 100%; }
 
-.reviews {
+.reviews__list {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,7 +610,7 @@ button {
     .reviews__reviewertext {
       display: none; } }
 
-.section--team {
+.team {
   background: url("../img/bg3.jpg") 50% no-repeat;
   background-size: cover;
   position: relative;
@@ -624,7 +622,12 @@ button {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.team {
+@media (max-width: 768px) {
+  .team {
+    width: 100%;
+    padding: 0; } }
+
+.team__area {
   position: absolute;
   right: 0;
   top: 0;
@@ -646,14 +649,9 @@ button {
   -ms-flex-direction: column;
   flex-direction: column; }
   @media (max-width: 768px) {
-    .team {
-      width: 100%;
-      padding: 0; } }
-
-@media (max-width: 768px) {
-  .team__area {
-    margin: 0 auto;
-    text-align: center; } }
+    .team__area {
+      margin: 0 auto;
+      text-align: center; } }
 
 .h2--team {
   color: #f8b43a;
@@ -762,7 +760,7 @@ button {
   color: #fff;
   font-size: 0.875rem; }
 
-.section--menu {
+.menu {
   background: url("../img/bg4.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
@@ -856,15 +854,15 @@ button {
   width: 100%;
   height: 100%; }
 
-.section--contacts {
+.contacts {
   background: url("../img/bg5.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
   @media (max-width: 768px) {
-    .section--contacts {
+    .contacts {
       text-align: center; } }
 
-.contacts {
+.footer {
   background: url("../img/footer.jpg") center center no-repeat;
   background-size: cover;
   position: absolute;
@@ -953,7 +951,7 @@ button {
   font-weight: bold;
   text-decoration: none; }
 
-.section--order {
+.order {
   background: url("../img/bg6.jpg") center center no-repeat;
   background-size: cover;
   -webkit-box-align: center;
@@ -1122,7 +1120,7 @@ button {
   height: 6.875rem;
   resize: none; }
 
-.section--slider {
+.slider {
   background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(50%, #eb8c38), color-stop(75%, #f9b43b));
   background: -webkit-linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
   background: -o-linear-gradient(#f9b43b, #eb8c38 50%, #f9b43b 75%);
@@ -1134,7 +1132,7 @@ button {
   -ms-flex-align: center;
   align-items: center; }
 
-.slider {
+.slider-container {
   height: 29.6875rem;
   width: 100%;
   max-width: 1100px; }
@@ -1283,7 +1281,7 @@ button {
   text-align: left;
   margin: 20px 0; }
 
-.h2--slider {
+.title {
   color: white;
   line-height: 0.889;
   font-size: 4.5rem;
@@ -1300,8 +1298,7 @@ button {
   display: inline-block;
   font-size: 1.875rem;
   font-family: "Gagalin";
-  color: #e35028;
-  line-height: 0.39; }
+  color: #e35028; }
 
 .slider__text-sum-figure {
   font-size: 4.5rem; }

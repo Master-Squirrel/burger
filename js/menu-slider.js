@@ -2,18 +2,20 @@ var allSliderItems = document.querySelectorAll(".accordion__item");
 var AllSliderHorizontItems = document.querySelectorAll(".team__item");
 
 
-function hideAllMenuTabs(e) {
+function hideAllMenuTabs() {
 
-    allSliderItems.forEach(function (e) {
-        e.classList.remove('accordion__item--active');
-        
-    })
+    allSliderItems.forEach(function (item) {
+        console.log(item);
+        item.classList.remove('accordion__item--active');
+        item.children[1].classList.add('visually-hidden');
+      })
 
 }
 
 function hideAllMenuHorizontTabs() {
 
     AllSliderHorizontItems.forEach(function (e) {
+        
         e.classList.remove('team__item--active');
         
     })
@@ -21,17 +23,20 @@ function hideAllMenuHorizontTabs() {
 }
 
 
-allSliderItems.forEach(function (e) {
+allSliderItems.forEach(function (item) {
     
-    e.addEventListener('click', function(e) {
+    item.addEventListener('click', function(e) {
         e.preventDefault();
-        hideAllMenuTabs(e);
+        hideAllMenuTabs();
+    
        
     })
 
-    e.addEventListener('click', function(){
-        e.classList.add('accordion__item--active');
+    item.addEventListener('click', function(){
+        item.classList.add('accordion__item--active');
+        item.children[1].classList.remove('visually-hidden');
     })
+    
       
 })
 

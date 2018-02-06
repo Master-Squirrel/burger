@@ -33,16 +33,22 @@ function init() {
             iconLayout: 'default#image',
             iconImageHref: 'http://burger.questbusters.ru/img/map-marker.png',
             iconImageSize: [46, 57],
-            iconImageOffset: [-26, -52],
-                        // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
-                        balloonContentHeader: "Балун метки",
-                        balloonContentBody: "Содержимое <em>балуна</em> метки",
-                        balloonContentFooter: "Подвал",
-                        hintContent: "Хинт метки"
+            iconImageOffset: [-26, -52]
         });
 
+    var slova = [1,2,3,4];
+
     for (var i = 0; i < coords.length; i++) {
-        myCollection.add(new ymaps.Placemark(coords[i]));
+
+        var currentAddress = slova[i];
+
+        myCollection.add(new ymaps.Placemark(coords[i],
+                                {// Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+                                balloonContentHeader: "Балун метки",
+                                balloonContentBody: "Слова" + currentAddress,
+                                balloonContentFooter: "Подвал",
+                                hintContent: "Хинт метки"}
+        ));
     }
 
     myMap

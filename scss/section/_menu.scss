@@ -74,14 +74,16 @@
 
 }
 .accordion__description {
-    display: none;
+    // display: none;
+    transition: width 1s; 
+
     font-family: "Ubuntu";
     font-weight: 300;
     font-size: rem(14px);
     color: white;
     line-height: 1.714;
     padding: rem(30px);
-    width: rem(400px);
+     width: rem(400px);
 
     height: 100%;
     position: relative;

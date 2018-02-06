@@ -900,7 +900,9 @@ button {
       font-size: 2rem; } }
 
 .accordion__description {
-  display: none;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
   font-family: "Ubuntu";
   font-weight: 300;
   font-size: 0.875rem;

@@ -31,7 +31,7 @@ function init() {
 
         myCollection = new ymaps.GeoObjectCollection({}, {
             iconLayout: 'default#image',
-            iconImageHref: '../img/map-marker.png',
+            iconImageHref: 'http://burger.questbusters.ru/img/map-marker.png',
             iconImageSize: [46, 57],
             iconImageOffset: [-26, -52],
                         // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.

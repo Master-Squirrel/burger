@@ -19,6 +19,9 @@
     @include tablets {
         width: 400px;
     }
+    @include phones {
+        width: 300px;
+    }
 }
 
 .slider__links-left {
@@ -26,7 +29,7 @@
     position: absolute;
 
     top: 50%;
-    left: -2%;
+    left: -5%;
     @include middle1220 {
         left: -5%;
     }
@@ -38,7 +41,7 @@
         left: -10%;
     }
     @include phones {
-        left: 0;
+        left: -15px;
     }
 
 }
@@ -46,8 +49,9 @@
     display: block;
     position: absolute;           
     top: 50%;
-    right:-2%; 
-    transform: scaleX(-1);
+    right: -5%;
+    transform: scaleX(-1) translateY(-3px);
+
     @include middle1220 {
         right: -5%;
     }
@@ -59,11 +63,16 @@
         right: -10%;
     }
     @include phones {
-        right: 0;
+        right: -15px;
     }
 }
 .slider__arrows {
     height: 33px;
+    @include phones {
+        width: 50%;
+        height: 50%;
+    }
+
 }
 .slider__center {
     position: relative;
@@ -110,6 +119,9 @@
     @include tablets {
         width: 400px;
     }
+    @include phones {
+        width: 300px;
+    }
 
 }
 .slider__center {
@@ -151,6 +163,9 @@
         background-color: #e35028;
         cursor: pointer;
 
+    }
+    @include phones {
+ 
     }
 }
 .slider__submenu {
@@ -205,6 +220,10 @@
     @include middle940 {
         margin-top: 90px;
         }
+    @include phones {
+           margin-top: 90px;
+           max-width: 60%;
+           }
 }
 
 .slider__text {
@@ -224,6 +243,9 @@
 
     @include middle940 {
         text-align: center;
+    }
+    @include phones {
+        font-size: rem(50px);
     }
 }
 .slider__text-desc,

@@ -701,6 +701,9 @@ button {
   font-weight: 300;
   max-width: 460px;
   padding: 20px; }
+  @media (max-width: 480px) {
+    .reviews__fullreview {
+      width: 90%; } }
 
 .review__fullreviewtext {
   display: none; }
@@ -1272,12 +1275,15 @@ button {
   @media (max-width: 768px) {
     .slider-container {
       width: 400px; } }
+  @media (max-width: 480px) {
+    .slider-container {
+      width: 300px; } }
 
 .slider__links-left {
   display: block;
   position: absolute;
   top: 50%;
-  left: -2%; }
+  left: -5%; }
   @media (max-width: 1220px) {
     .slider__links-left {
       left: -5%; } }
@@ -1290,16 +1296,16 @@ button {
       left: -10%; } }
   @media (max-width: 480px) {
     .slider__links-left {
-      left: 0; } }
+      left: -15px; } }
 
 .slider__links-right {
   display: block;
   position: absolute;
   top: 50%;
-  right: -2%;
-  -webkit-transform: scaleX(-1);
-  -ms-transform: scaleX(-1);
-  transform: scaleX(-1); }
+  right: -5%;
+  -webkit-transform: scaleX(-1) translateY(-3px);
+  -ms-transform: scaleX(-1) translateY(-3px);
+  transform: scaleX(-1) translateY(-3px); }
   @media (max-width: 1220px) {
     .slider__links-right {
       right: -5%; } }
@@ -1312,10 +1318,14 @@ button {
       right: -10%; } }
   @media (max-width: 480px) {
     .slider__links-right {
-      right: 0; } }
+      right: -15px; } }
 
 .slider__arrows {
   height: 33px; }
+  @media (max-width: 480px) {
+    .slider__arrows {
+      width: 50%;
+      height: 50%; } }
 
 .slider__center {
   position: relative;
@@ -1355,6 +1365,9 @@ button {
   @media (max-width: 768px) {
     .slider__item {
       width: 400px; } }
+  @media (max-width: 480px) {
+    .slider__item {
+      width: 300px; } }
 
 .slider__center {
   width: 100%;
@@ -1460,6 +1473,10 @@ button {
   @media (max-width: 940px) {
     .slider__image {
       margin-top: 90px; } }
+  @media (max-width: 480px) {
+    .slider__image {
+      margin-top: 90px;
+      max-width: 60%; } }
 
 .slider__text {
   display: -webkit-box;
@@ -1484,6 +1501,9 @@ button {
   @media (max-width: 940px) {
     .title__slider {
       text-align: center; } }
+  @media (max-width: 480px) {
+    .title__slider {
+      font-size: 3.125rem; } }
 
 .slider__text-desc,
 .slider__text-header,

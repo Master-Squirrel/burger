@@ -487,6 +487,9 @@ button {
   color: #f8b43a;
   line-height: 1.8;
   text-align: center; }
+  @media (max-width: 480px) {
+    .title__hero {
+      font-size: 3.125rem; } }
 
 .burgerblock__naturalburgers {
   font-size: 4.0625rem;
@@ -497,6 +500,9 @@ button {
   @media (max-width: 768px) {
     .burgerblock__naturalburgers {
       margin: 0 10%; } }
+  @media (max-width: 480px) {
+    .burgerblock__naturalburgers {
+      font-size: 2.5rem; } }
 
 .best {
   background: url("../img/bg2.jpg") center center no-repeat;
@@ -1103,7 +1109,7 @@ button {
     .title__order {
       font-size: 12vw;
       line-height: 1.5;
-      margin-bottom: 3.125rem; } }
+      margin-bottom: 0.9375rem; } }
 
 .order__form {
   display: -webkit-box;
@@ -1403,6 +1409,9 @@ button {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden; }
+  @media (max-width: 480px) {
+    .slider__burger {
+      height: 50%; } }
 
 .slider__menu {
   position: absolute;
@@ -1465,8 +1474,13 @@ button {
 .submenu__pos-icon {
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 2.8125rem;
   height: 2.8125rem; }
+  @media (max-width: 480px) {
+    .submenu__pos-icon {
+      width: 1.5625rem;
+      height: 1.5625rem; } }
 
 .slider__image {
   max-width: 100%; }

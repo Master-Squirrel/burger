@@ -146,7 +146,9 @@
     overflow: hidden;
     // width: 50%;
     //  margin-bottom: rem(40px;
-    
+    @include phones {
+    height: 50%;
+    }
 
 
 }
@@ -181,6 +183,10 @@
     border-radius: 5px;
     background-color: rgba($color: #ffffff, $alpha: 0.8);
     padding: rem(20px);
+
+    @include phones {
+        
+    }
 }
 .submenu__pos {
     display: flex;
@@ -211,8 +217,13 @@
 .submenu__pos-icon {
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: rem(45px);
     height: rem(45px);
+    @include phones {
+        width: rem(25px);
+    height: rem(25px);
+    }
 }
 .slider__image {
     max-width: 100%;

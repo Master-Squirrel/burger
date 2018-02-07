@@ -25,12 +25,14 @@
     height: 100%;
     // border: rem(1px) solid red;
     margin: 0;
-    transition: 1s;
+    
 }
 .accordion__item {
     display: flex;
     align-items: center;
     height: 100%;
+
+   
     
 }
 .accordion__link {
@@ -83,7 +85,7 @@
     color: white;
     line-height: 1.714;
     padding: rem(30px);
-     width: rem(400px);
+    //  width: rem(400px);
 
     height: 100%;
     position: relative;
@@ -100,7 +102,11 @@
 }
 
 .accordion__text {
-    width: 100%;
+   
+    width: rem(470px);
     height: 100%;
 
+    @include tablets {
+        width: rem(200px);
+    }
 }

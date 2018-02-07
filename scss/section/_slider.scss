@@ -6,29 +6,68 @@
 
 .slider-container {
     height: rem(475px);
-    width: 100%;
-    max-width: 1100px;
+    width: 1100px;
+
+    @include middle1220 {
+        width: 800px;
+    }
+
+    @include middle940 {
+        height: 90%;
+        width: 700px;
+    }
+    @include tablets {
+        width: 400px;
+    }
 }
 
-
 .slider__links-left {
-display: block;
-position: absolute;
+    display: block;
+    position: absolute;
 
-top: 50%;
-left: -50px;
+    top: 50%;
+    left: -2%;
+    @include middle1220 {
+        left: -5%;
+    }
+    @include middle940 {
+       left:2%;
+       z-index: 50;
+    }
+    @include tablets {
+        left: -10%;
+    }
+    @include phones {
+        left: 0;
+    }
+
 }
 .slider__links-right {
     display: block;
-    position: absolute;
-    transform: rotate(180deg);
+    position: absolute;           
     top: 50%;
-    right: -50px;
+    right:-2%; 
+    transform: scaleX(-1);
+    @include middle1220 {
+        right: -5%;
+    }
+    @include middle940 {
+        right: 2%;
+        z-index: 50;
+     }
+     @include tablets {
+        right: -10%;
+    }
+    @include phones {
+        right: 0;
+    }
 }
-
+.slider__arrows {
+    height: 33px;
+}
 .slider__center {
     position: relative;
-    
+
     height: 100%;
 }
 .slider__links {
@@ -37,31 +76,40 @@ left: -50px;
     top: 50%;
 }
 
-
 .slider__wrapper {
     overflow: hidden;
     position: relative;
-    width: 100%; 
-    height: rem(475px);
+    width: 100%;
+    height: 100%;
+    // height: rem(475px);
 
 }
-.slider__list {   
+.slider__list {
 
- 
-height: 100%;
-left: 0;
-position: absolute;
-display: flex;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    display: flex;
 
-transition: 1s;
+    transition: 1s;
 
 }
 .slider__item {
     // display: block;
     // width: 100%;
     height: 100%;
-    width: 1100px;
-    
+    width: 940px;
+
+    @include middle1220 {
+        width: 800px;
+    }
+    @include middle940 {
+       
+        width: 700px;
+    }
+    @include tablets {
+        width: 400px;
+    }
 
 }
 .slider__center {
@@ -70,6 +118,12 @@ transition: 1s;
     height: 100%;
     display: flex;
     justify-content: center;
+
+    @include middle940 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .slider__burger {
@@ -78,8 +132,11 @@ transition: 1s;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 50%;
+    // width: 50%;
     //  margin-bottom: rem(40px;
+    
+
+
 }
 .slider__menu {
     position: absolute;
@@ -90,18 +147,15 @@ transition: 1s;
     top: 0;
     left: 0;
 
-    &:hover{
+    &:hover {
         background-color: #e35028;
-       cursor: pointer;
+        cursor: pointer;
 
-       +.slider__submenu {
-           display: flex;
-       }
     }
 }
 .slider__submenu {
     display: none;
-    
+
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -111,7 +165,7 @@ transition: 1s;
     // height: rem(340px);
     border-radius: 5px;
     background-color: rgba($color: #ffffff, $alpha: 0.8);
-    padding: rem(20px) rem(20px);
+    padding: rem(20px);
 }
 .submenu__pos {
     display: flex;
@@ -126,8 +180,7 @@ transition: 1s;
 }
 .submenu__pos-ingr {
     flex: 1;
-margin-left: rem(10px);
-   
+    margin-left: rem(10px);
 
     font-size: rem(14px);
     font-family: "Ubuntu";
@@ -141,13 +194,17 @@ margin-left: rem(10px);
 }
 
 .submenu__pos-icon {
-    background-position: center center; 
-    background-repeat:  no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
     width: rem(45px);
     height: rem(45px);
 }
 .slider__image {
     max-width: 100%;
+
+    @include middle940 {
+        margin-top: 90px;
+        }
 }
 
 .slider__text {
@@ -156,9 +213,18 @@ margin-left: rem(10px);
     justify-content: center;
     width: 50%;
     text-align: left;
+
+    @include middle940 {
+        text-align: center;
+        width: initial;
+    }
 }
 .title__slider {
     text-align: left;
+
+    @include middle940 {
+        text-align: center;
+    }
 }
 .slider__text-desc,
 .slider__text-header,
@@ -166,7 +232,7 @@ margin-left: rem(10px);
     width: 100%;
     //  height: 33%;
     vertical-align: middle;
-   
+
     margin: 20px 0;
 }
 
@@ -175,7 +241,7 @@ margin-left: rem(10px);
     font-family: "Ubuntu";
     color: rgb(255, 255, 255);
     line-height: 1.714;
-   
+
 }
 
 .slider__text-sum {
@@ -183,6 +249,10 @@ margin-left: rem(10px);
     font-size: rem(30px);
     font-family: "Gagalin";
     color: rgb(227, 80, 40);
+
+    @include middle940 {
+        margin-right: 20px;
+    }
 
 }
 .slider__text-sum-figure {

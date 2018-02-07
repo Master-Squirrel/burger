@@ -21,6 +21,16 @@
         @content;
     }
 }
+@mixin middle940 () {
+    @media (max-width: $middle940) {
+        @content;
+    }
+}
+@mixin middle1220 () {
+    @media (max-width: $middle1220){
+        @content;
+    }
+}
 
 
 @function rem($px) {

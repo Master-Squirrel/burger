@@ -14,6 +14,12 @@
     font-family: "Gagalin";
     color: white;
     // line-height: 1.714;
+
+    @include middle940 {
+     top: 0;
+     right: 0;
+     left: initial;
+    }
 }
 .kkal__img {
     background: url("../img/slider/kkal.png") center center no-repeat;

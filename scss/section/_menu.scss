@@ -76,7 +76,7 @@
 
 }
 .accordion__description {
-    // display: none;
+    
     transition: width 1s; 
 
     font-family: "Ubuntu";
@@ -85,12 +85,13 @@
     color: white;
     line-height: 1.714;
     padding: rem(30px);
-    //  width: rem(400px);
+    
 
     height: 100%;
     position: relative;
     background-color: rgba($color: $dark, $alpha: 0.93);
 
+    
 }
 
 .accordion__item--active .accordion__header {

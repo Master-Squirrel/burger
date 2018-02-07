@@ -5,8 +5,19 @@ function hideAllMenuTabs() {
 
     allSliderItems.forEach(function (item) {
 
-        item.classList.remove('accordion__item--active');
+        let slide = item.children[1];
+
+        let width = parseInt(getComputedStyle(slide).width);
+        
+
+        // for (let i = width; i > 0; i--) {
+        //     console.log(i);
+        //     slide.style.width = i+'px';            
+        // }
+        
+        item.classList.remove('accordion__item--active');       
         item.children[1].classList.add('visually-hidden');
+        
 
     })
 

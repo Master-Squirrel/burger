@@ -98,11 +98,14 @@
 
 }
 .accordion__item--active > .accordion__description {
-    display: block;
+    width: rem(500px);
+
+    @include tablets {
+        width: rem(230px);
+    }
 }
 
 .accordion__text {
-   
     width: rem(470px);
     height: 100%;
 

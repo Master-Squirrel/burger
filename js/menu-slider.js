@@ -5,13 +5,9 @@ function hideAllMenuTabs() {
 
     allSliderItems.forEach(function (item) {
 
-        item
-            .classList
-            .remove('accordion__item--active');
-        item
-            .children[1]
-            .classList
-            .add('visually-hidden');
+        item.classList.remove('accordion__item--active');
+        item.children[1].classList.add('visually-hidden');
+
     })
 
 }
@@ -19,19 +15,18 @@ function hideAllMenuTabs() {
 allSliderItems.forEach(function (item) {
 
     item.addEventListener('click', function (e) {
+        
         e.preventDefault();
-        hideAllMenuTabs();
 
-    })
-
-    item.addEventListener('click', function () {
-        item
-            .classList
-            .add('accordion__item--active');
-        item
-            .children[1]
-            .classList
-            .remove('visually-hidden');
+        if (item.classList.contains('accordion__item--active')) {
+            console.log ("Contain");
+            hideAllMenuTabs();
+        } else {
+            hideAllMenuTabs();
+            item.classList.add('accordion__item--active');
+            item.children[1].classList.remove('visually-hidden');
+        }
+      
     })
 
 })
@@ -41,28 +36,26 @@ var AllSliderHorizontItems = document.querySelectorAll(".team__item");
 
 function hideAllMenuHorizontTabs() {
 
-    AllSliderHorizontItems.forEach(function (e) {
+    AllSliderHorizontItems.forEach(function (item) {
 
-        e
-            .classList
-            .remove('team__item--active');
+       item.classList.remove('team__item--active');
 
     })
 
 }
 
-AllSliderHorizontItems.forEach(function (e) {
+AllSliderHorizontItems.forEach(function (item) {
 
-    e.addEventListener('click', function (e) {
+    item.addEventListener('click', function (e) {
         e.preventDefault();
-        hideAllMenuHorizontTabs();
 
-    })
+        if (item.classList.contains('team__item--active')) {
+            hideAllMenuHorizontTabs();
+        } else {
+            hideAllMenuHorizontTabs();
+            item.classList.add('team__item--active');
+        }
 
-    e.addEventListener('click', function () {
-        e
-            .classList
-            .add('team__item--active');
     })
 
 })

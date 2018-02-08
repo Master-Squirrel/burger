@@ -1,16 +1,13 @@
 .mob-menu__icon {
     display: none;
-    position: relative;
-    // content: "";
+    position: relative; // content: "";
     // position: absolute;
     width: 30px;
     height: 5px;
     background-color: white;
     border-radius: 5px;
-    margin-left: 40px;
-    // right: 20px;
+    margin-left: 40px; // right: 20px;
     // top: 30px;
-    
     &::before {
         content: "";
         position: absolute;
@@ -18,9 +15,8 @@
         height: 5px;
         background-color: white;
         border-radius: 5px;
-        top: 10px;    
-            }
-
+        top: 10px;
+    }
     &::after {
         content: "";
         position: absolute;
@@ -28,10 +24,98 @@
         height: 5px;
         background-color: white;
         border-radius: 5px;
-        bottom:  10px;    
+        bottom: 10px;
     }
-
     @include tablets {
         display: block;
     }
+}
+
+// Mobile menu block
+
+.smallmenu {
+    // display: flex;
+    display: none;
+    flex-direction: column; // justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: $dark;
+    opacity: .99;
+}
+
+.smallmenu__top {
+    display: flex;
+    width: 100%;
+    padding: 10px 0 0 20px;
+}
+
+.smallmenu__logo {}
+
+.smallmenu__close {
+    position: absolute;
+    top: 30px;
+    right: 40px;        
+    cursor: pointer;
+}
+
+.smallmenu__bottom {
+    width: 100%;
+    flex: 1;
+    align-items: center;
+    margin-top: rem(140px);
+}
+
+
+.smallmenu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style: none;
+    color: #fff;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: rem(13px);    
+    
+    line-height: 2.308;     
+
+    @include tablets {
+       
+    }
+}
+
+.smallmenu__item {
+    display: flex;
+    flex-direction: column;
+   
+
+    
+    
+
+    &::after {
+        
+        content: ' ';
+        display: block;
+        height: rem(69px); 
+        @include circle (rem(4px), #fff);
+        // margin: 0 rem(13px) 0 rem(13px);
+        align-self: center;    
+    }
+
+}
+
+.smallmenu__link {
+    text-decoration: none;
+    color: white;
+
+    font-family: "Ubuntu";
+    font-size: rem(24px);
+    font-weight: normal;
+    text-transform: uppercase;
+    white-space: nowrap;
 }

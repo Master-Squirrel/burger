@@ -418,7 +418,7 @@ button {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
-  z-index: 100; }
+  z-index: -1; }
 
 .start {
   background: url("../img/bg1.jpg") center center no-repeat;
@@ -1284,6 +1284,9 @@ button {
   @media (max-width: 480px) {
     .slider-container {
       width: 300px; } }
+  @media (max-width: 350px) {
+    .slider-container {
+      width: 200px; } }
 
 .slider__links-left {
   display: block;
@@ -1330,8 +1333,8 @@ button {
   height: 33px; }
   @media (max-width: 480px) {
     .slider__arrows {
-      width: 50%;
-      height: 50%; } }
+      width: 75%;
+      height: 75%; } }
 
 .slider__center {
   position: relative;
@@ -1374,6 +1377,9 @@ button {
   @media (max-width: 480px) {
     .slider__item {
       width: 300px; } }
+  @media (max-width: 350px) {
+    .slider__item {
+      width: 200px; } }
 
 .slider__center {
   width: 100%;
@@ -1412,6 +1418,9 @@ button {
   @media (max-width: 480px) {
     .slider__burger {
       height: 50%; } }
+  @media (max-width: 350px) {
+    .slider__burger {
+      height: initial; } }
 
 .slider__menu {
   position: absolute;
@@ -1490,7 +1499,10 @@ button {
   @media (max-width: 480px) {
     .slider__image {
       margin-top: 90px;
-      max-width: 60%; } }
+      max-width: 90%; } }
+  @media (max-width: 350px) {
+    .slider__image {
+      margin-top: 10px; } }
 
 .slider__text {
   display: -webkit-box;
@@ -1525,6 +1537,11 @@ button {
   width: 100%;
   vertical-align: middle;
   margin: 20px 0; }
+  @media (max-width: 350px) {
+    .slider__text-desc,
+    .slider__text-header,
+    .slider__text-price {
+      margin: 5px; } }
 
 .slider__text-desc {
   font-size: 0.875rem;
@@ -1571,3 +1588,90 @@ button {
   @media (max-width: 768px) {
     .mob-menu__icon {
       display: block; } }
+
+.smallmenu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #2f3234;
+  opacity: .99; }
+
+.smallmenu__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px 0 0 20px; }
+
+.smallmenu__close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer; }
+
+.smallmenu__bottom {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 8.75rem; }
+
+.smallmenu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 2.308; }
+
+.smallmenu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .smallmenu__item::after {
+    content: ' ';
+    display: block;
+    height: 4.3125rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 0.125rem;
+    background-color: #fff;
+    -ms-flex-item-align: center;
+    align-self: center; }
+
+.smallmenu__link {
+  text-decoration: none;
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  white-space: nowrap; }

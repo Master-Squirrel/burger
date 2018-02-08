@@ -16,6 +16,11 @@
         @content;
     }
 }
+@mixin smallphones () {
+    @media (max-width: $smallphones) {
+        @content;
+    }
+}
 @mixin middle658 () {
     @media (max-width: $middle658) {
         @content;

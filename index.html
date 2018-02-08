@@ -26,6 +26,24 @@
     <body>
         <div class="wrapper">
             <section class="section start">
+
+<div class="smallmenu">
+    <div class="smallmenu__top">
+        <img src="img/logo.png" alt="" class="smallmenu__logo">
+        <img src="img/close-gray.png" class="smallmenu__close">
+    </div>
+    <div class="smallmenu__bottom">
+        <ul class="smallmenu__list">
+            <li class="smallmenu__item"><a href="#" class="smallmenu__link">О нас</li>
+            <li class="smallmenu__item"><a href="#" class="smallmenu__link">Бургеры</a></li>
+            <li class="smallmenu__item"><a href="#" class="smallmenu__link">Команды</a></li>
+            <li class="smallmenu__item"><a href="#" class="smallmenu__link">Меню</a></li>
+            <li class="smallmenu__item"><a href="#" class="smallmenu__link">Отзывы</a></li>
+            <li class="smallmenu__item"><a href="#" class="smallmenu__link">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
                 <h2 class="visually-hidden">Мы делаем натуральные бургеры</h2>
                 <div class="container container--flex container--cloumn">
 
@@ -58,7 +76,7 @@
 
                         <a href="#" class="btn btn_color_orange">ЗАКАЗАТЬ</a>
 
-                        <a href="1" class="mob-menu">
+                        <a href="#" class="mob-menu">
                             <div class="mob-menu__icon"></div>
                         </a>
                     </header>
@@ -1032,28 +1050,23 @@
             </ul>
 
             <script>
+                //Modal windows - Order
                 function doOverlay() {
                     overlayObj = document.createElement('div');
-                    overlayObj
-                        .classList
-                        .add('overlay');
-                    document
-                        .body
-                        .appendChild(overlayObj);
+                    overlayObj.classList.add('overlay');
+                    document.body.appendChild(overlayObj);
+                    
 
-                    closeButton.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        modalObj.style.opacity = 0;
-                        document
-                            .body
-                            .removeChild(overlayObj);
-                    })
+                    
 
                 }
 
                 function displayModal() {
                     // var modalObj = document.querySelector('.modal');
+                    modalObj.style.zIndex = 200;
                     modalObj.style.opacity = 1;
+                    console.log(getComputedStyle(overlayObj));
+                    
                 }
 
                 var orderButton = document.querySelector('#orderButton');
@@ -1066,6 +1079,14 @@
                     displayModal();
 
                 })
+
+                closeButton.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        modalObj.style.opacity = 0;
+                        modalObj.style.zIndex = -1;
+                        document.body.removeChild(overlayObj);
+                    })
+
 
                 //Display Reviewes
                 var reviewesButtons = document.querySelectorAll('.reviews__button');
@@ -1092,9 +1113,33 @@
                             fullReviewBock.style.display = "none";
                 })
             </script>
+            
 
             <script src="./js/slider.js"></script>
             <script src="./js/menu-slider.js"></script>
+            <script src="./js/mobilemenu.js"></script>
+
+<script>
+    var mobMenuButton = document.querySelector(".mob-menu");
+    var smallMenu = document.querySelector(".smallmenu");
+
+    mobMenuButton.addEventListener('click', function(e) {
+    e.preventDefault;
+    smallMenu.style.display = "flex";
+}) 
+
+smallMenu.addEventListener('click', function(e) {
+    e.preventDefault();
+    smallMenu.style.display = "none";
+})
+
+
+
+
+
+
+</script>
+
             <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
             <script src="js/map.js"></script>
         </body>

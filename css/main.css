@@ -1484,7 +1484,7 @@ button {
 .submenu__pos-icon {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 2.8125rem;
   height: 2.8125rem; }
   @media (max-width: 480px) {

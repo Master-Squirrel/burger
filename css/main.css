@@ -832,10 +832,11 @@ button {
   font-family: Ubuntu;
   overflow: hidden;
   height: 0;
+  width: 100%;
   margin-top: 0.875rem;
-  -webkit-transition: height 1s;
-  -o-transition: height 1s;
-  transition: height 1s; }
+  -webkit-transition: height 0.4s;
+  -o-transition: height 0.4s;
+  transition: height 0.4s; }
   @media (max-width: 768px) {
     .team__member {
       -webkit-box-orient: vertical;

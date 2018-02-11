@@ -42,35 +42,6 @@ allSliderItems.forEach(function (item) {
 
 })
 
-//Horizontal Acco
-var AllSliderHorizontItems = document.querySelectorAll(".team__item");
-
-function hideAllMenuHorizontTabs() {
-
-    AllSliderHorizontItems.forEach(function (item) {
-
-       item.classList.remove('team__item--active');
-
-    })
-
-}
-
-AllSliderHorizontItems.forEach(function (item) {
-
-    item.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        if (item.classList.contains('team__item--active')) {
-            hideAllMenuHorizontTabs();
-        } else {
-            hideAllMenuHorizontTabs();
-            item.classList.add('team__item--active');
-        }
-
-    })
-
-})
-
 //Slider Menu Button
 var ingrButton = document.querySelectorAll('.slider__menu');
 var ingrSubMenu = document.querySelectorAll('.slider__submenu');

@@ -98,6 +98,7 @@
     display: inline-flex;
     margin-bottom: rem(20px);
     align-items: center;
+    
 
     @include tablets() {
         font-size: rem(25px);
@@ -111,8 +112,9 @@
     font-family: Ubuntu;
     overflow: hidden;
     height: 0;
+    width: 100%;
     margin-top: rem(14px);
-    transition: height 1s;
+    transition: height 0.4s;
 
     @include tablets {
         flex-direction: column;

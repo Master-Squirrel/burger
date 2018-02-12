@@ -37,6 +37,7 @@ body {
 
 }
 .container--flex {
+    -js-display: flex;
     display: flex;
 
     @include phones {

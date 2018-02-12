@@ -10,7 +10,7 @@ leftArrow.addEventListener('click', function (e) {
     var currentLeft = (parseInt(getComputedStyle(burgerSlide).left));
 
     if (start > 1 && currentLeft % size == 0) {
-        console.log(currentLeft + ' ' +  5 % 2 )
+        
         burgerSlide.style.left = currentLeft + size + 'px';
         start--;
     } else if (currentLeft % size == 0) {
@@ -37,7 +37,7 @@ rightArrow.addEventListener('click', function (e) {
 
 window.addEventListener('resize', function() {
     size = parseInt(window.getComputedStyle(document.querySelector('.slider-container')).width);
-    console.log(size);
+    
     currentLeft = (parseInt(getComputedStyle(burgerSlide).left));
     burgerSlide.style.left = -size*(start-1) + 'px';
 })

@@ -11,7 +11,7 @@ function hideAllMenuTabs() {
         
 
         // for (let i = width; i > 0; i--) {
-        //     console.log(i);
+        
         //     slide.style.width = i+'px';            
         // }
         
@@ -30,7 +30,7 @@ allSliderItems.forEach(function (item) {
         e.preventDefault();
 
         if (item.classList.contains('accordion__item--active')) {
-            console.log ("Contain");
+            
             hideAllMenuTabs();
         } else {
             hideAllMenuTabs();

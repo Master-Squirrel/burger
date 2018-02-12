@@ -32,7 +32,7 @@ var accordion = document.getElementById("team__area"),
     items = accordion.getElementsByClassName("team__item"),
     contents = accordion.getElementsByClassName("team__member"),
     i;
-console.log(items.length);
+
 accordion.addEventListener("click", function(e) {
   if (e.target.classList.contains("team__link")) {
       e.preventDefault();

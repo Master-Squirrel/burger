@@ -141,6 +141,9 @@
     align-items: center;
     overflow: hidden; // width: 50%;
     //  margin-bottom: rem(40px;
+    @include tablets {
+        
+    }
     @include phones {
         height: 50%;
     }
@@ -222,7 +225,7 @@
     }
     @include phones {
         margin-top: 90px;
-        max-width: 90%;
+        max-width: 65%;
     }
     @include smallphones {
         margin-top: 10px;

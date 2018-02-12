@@ -50,6 +50,7 @@
 .title__team {
     color: $yellow;
     margin-bottom: 12%;
+    
 }
 
 .team__item {
@@ -67,6 +68,7 @@
 
 .team__item--active {
     margin-bottom: rem(30px);
+    height: 155px;
 
     .team__link {
         color: $yellow;

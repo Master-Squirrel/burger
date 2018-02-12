@@ -788,7 +788,8 @@ button {
       margin: 0 auto; } }
 
 .team__item--active {
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  height: 155px; }
   .team__item--active .team__link {
     color: #f8b43a; }
   .team__item--active .team__member {
@@ -1500,7 +1501,7 @@ button {
   @media (max-width: 480px) {
     .slider__image {
       margin-top: 90px;
-      max-width: 90%; } }
+      max-width: 65%; } }
   @media (max-width: 350px) {
     .slider__image {
       margin-top: 10px; } }

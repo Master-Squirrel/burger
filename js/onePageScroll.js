@@ -72,9 +72,9 @@ $(document).on({
 const paginator = $('.paginator');
 
 sections.each(e => {
-    var li = $("<li></li>")
+    var li = $('<li></li>')
     .html(`<a href="#" class="paginator__link" data-scroll-to="${e}"></a>`);
-    paginator.append(li);
+    paginator.append(`<li class="paginator__item"><a href="#" class="paginator__link" data-scroll-to="${e}"></a></li>`);
 })
 
 

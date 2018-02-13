@@ -803,7 +803,7 @@ button {
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
-    height: auto; }
+    height: 155px; }
   .team__item--active .team__icon {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -1362,7 +1362,8 @@ button {
 
 .slider__item {
   height: 100%;
-  width: 940px; }
+  width: 940px;
+  position: relative; }
   @media (max-width: 1220px) {
     .slider__item {
       width: 800px; } }
@@ -1404,7 +1405,6 @@ button {
       align-items: center; } }
 
 .slider__burger {
-  position: relative;
   -js-display: flex;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -22,15 +22,17 @@ accordion.addEventListener("click", function(e) {
         contents[i].style.height = null;
       }
       // открываем текущий блок с контентом
-      flexOrientation = $('.team__member').css('flex-direction');
-      console.log(flexOrientation);
+      // flexOrientation = $('.team__member').css('flex-direction');
+      // console.log(flexOrientation);
 
-      if (flexOrientation == 'column') {
-        content.style.height = content.scrollHeight + 75 + "px";
-      } else {
-        content.style.height = content.scrollHeight + "px";
-      }
+      // if (flexOrientation == 'column') {
+      //   content.style.height = content.scrollHeight + 75 + "px";
+      // } else {
+      //   content.style.height = content.scrollHeight + "px";
+      // }
       
+      content.style.height = content.scrollHeight + "px";
+
     } else { // активный
       // удаляем класс active для текущего li
       item.classList.remove("active");

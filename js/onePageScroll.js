@@ -46,7 +46,7 @@ const scrollToSection = direction => {
     }
 }
 
-$(document).on({
+$(".wrapper").on({
     wheel: e => {
 
         const deltaY = e.originalEvent.deltaY;
@@ -64,7 +64,9 @@ $(document).on({
                 scrollToSection('down');
         }
     },
-    touchmove: e => e.preventDefault()
+    touchmove: function (e) {
+        return e.preventDefault()
+    }
 
 })
 

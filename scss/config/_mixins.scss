@@ -37,6 +37,12 @@
     }
 }
 
+@mixin portrait () {
+    
+    @media (max-height: $height650) and (min-width: $middle658) { 
+        @content;
+    }
+}
 
 @function rem($px) {
     @return $px / 16px+0rem;

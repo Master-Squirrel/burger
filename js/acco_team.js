@@ -1,13 +1,15 @@
 var accordion = document.getElementById("team__area"),
     items = accordion.getElementsByClassName("team__item"),
     contents = accordion.getElementsByClassName("team__member"),
+    wraps = accordion.getElementsByClassName("member__member-wrapper"),
     i;
 
 accordion.addEventListener("click", function(e) {
   if (e.target.classList.contains("team__link")) {
     var trigger = e.target;
-    var content = trigger.nextElementSibling;
+    var content = trigger.nextElementSibling;  
     var item = trigger.parentNode;
+    var wrap = content.getElementsByClassName('team__member')[0];
 
     if (!item.classList.contains("active")) { // не активный
       // удаляем active для всех li
@@ -18,8 +20,8 @@ accordion.addEventListener("click", function(e) {
       item.classList.add("active");
 
       // закрываем все блоки с контентом
-      for (i = 0; i < contents.length; i++) {
-        contents[i].style.height = null;
+      for (i = 0; i < wraps.length; i++) {
+        wraps[i].style.height = null;
       }
       // открываем текущий блок с контентом
       // flexOrientation = $('.team__member').css('flex-direction');
@@ -30,8 +32,8 @@ accordion.addEventListener("click", function(e) {
       // } else {
       //   content.style.height = content.scrollHeight + "px";
       // }
-      
-      content.style.height = content.scrollHeight + "px";
+            
+      content.style.height = wrap.scrollHeight + "px";
 
     } else { // активный
       // удаляем класс active для текущего li

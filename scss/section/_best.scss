@@ -33,6 +33,10 @@
         align-items: center;
         
        }
+       @include portrait {
+        padding-top: 0;
+        padding-bottom: 15%; 
+    }
 }
 .best__item {
     width: 33%;

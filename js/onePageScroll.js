@@ -73,8 +73,12 @@ const paginator = $('.paginator');
 
 sections.each(e => {
     var li = $('<li></li>')
+    .prop('className', ' paginator__item')
     .html(`<a href="#" class="paginator__link" data-scroll-to="${e}"></a>`);
-    paginator.append(`<li class="paginator__item"><a href="#" class="paginator__link" data-scroll-to="${e}"></a></li>`);
+
+    // .html(`<a href="#" class="paginator__link" data-scroll-to="${e}"></a>`);
+    // paginator.append(`<li class="paginator__item"><a href="#" class="paginator__link" data-scroll-to="${e}"></a></li>`);
+    paginator.append(li);
 })
 
 

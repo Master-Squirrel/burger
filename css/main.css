@@ -425,7 +425,8 @@ button {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 10; }
+  z-index: 10;
+  text-align: center; }
 
 .start {
   background: url("../img/bg1.jpg") center center no-repeat;

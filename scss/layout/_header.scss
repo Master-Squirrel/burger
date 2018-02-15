@@ -4,13 +4,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-top: rem(12px);
 }
 
 .logo {
-    margin: rem(7px) 0 0 rem(-3px);
+    display: inline-block;
     overflow: hidden;
     width: rem(92px);
     height: rem(69px);
+    z-index: 40;
 }
 .header__logo-image {
     max-width: 100%;

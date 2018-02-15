@@ -2,72 +2,91 @@
     background: url("../img/bg1.jpg") center center no-repeat;
     background-size: cover;
 
-
 }
 /* Бургерный блок */
-.burger{
-    flex: .8; //Изменено с 1
-    // padding-bottom: rem(80px);
-
-    display: flex;   
-    width: 100%;
+.burger {
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; 
+    // width: 100%;
+    padding-bottom: 15%;
+
     @include tablets {
         padding-top: 50px;
-        
-       }
+    }
+    @include phones {
+        padding-top: 10px;
+    }
 }
 .burgerblock {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    align-self: center;
+
+    // width: 100%;
+    // align-self: center;
+    // align-items: center;
     /* border: rem(1px) solid red; */
     /* width: rem(900px); */
 
     @include tablets {
-     flex-direction: column;
-     
+        flex-direction: column;
+
     }
 }
 .burgerblock__image {
     // width: rem(451px);
     // height: rem(359px);
-    overflow: hidden;
+
 }
 .burgerblock__image-img {
-        max-width: 100%;
+    
+    transform: translateX(-50%);
+    left: 50%;
+
+    display: inline-block;
+    max-width: 100%;
+    max-width: 100%;
+    position: relative;
+
+    @include tablets {
+        max-width: 80%;
+    }
+    @include phones {
+        max-width: 80%;
+    }
 }
 .burgerblock__block {
     width: 50%;
+    float: left;
     @include tablets {
         width: 100%;
-        text-align: center;
-       }
+        float: none;
+    }
 }
-.burgerblock__slogan {
-    text-align: left;
-    // padding-left: rem(20px);
-    margin-top: rem(50px);
+.burgerblock__slogan {    
+    padding-top: rem(115px);
 
     @include tablets {
         text-align: center;
-        padding-top: rem(30px);
-       }
+        padding: rem(28px) 20% 0;
+    }
+    @include phones {
+        text-align: center;
+        padding-top: 0;
+    }
 }
 
-.burger-slogan-naturalburger,
-.burger-slogan-wedo {
-    /* display: block; */
-}
-
-.title__hero {  
+.title__hero {
     font-size: rem(72px);
     font-family: Gagalin;
     color: $yellow;
-    line-height: 1.8;
-    text-align: center;
-
+    margin-bottom: rem(12px);
+    text-align: left;
+    @include tablets {
+        text-align: center;
+     
+    }
     @include phones {
         font-size: rem(50px);
     }
@@ -77,13 +96,9 @@
     font-size: rem(65px);
     font-family: LifeHack;
     color: #fff;
-    // letter-spacing: -1.rem(9px);
-    line-height: 0.923;
-    position: relative;
-
-    @include tablets {
-        margin: 0 10%;
-    }
+    text-transform: lowercase;
+    line-height: 1em;
+    
     @include phones {
         font-size: rem(40px);
     }

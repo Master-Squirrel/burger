@@ -31,28 +31,32 @@
 
 @font-face {
   font-family: 'LifeHack';
-  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
+  src: url("../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 0.9375rem; } }
-
-@media (max-width: 480px) {
-  html {
-    font-size: 0.8125rem; } }
+html {
+  font-family: sans-serif;
+  line-height: 1.15; }
 
 body,
 html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
+  @media (max-width: 940px) {
+    body,
+    html {
+      font-size: 0.9375rem; } }
+  @media (max-width: 480px) {
+    body,
+    html {
+      font-size: 0.8125rem; } }
 
 body {
   font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   position: relative;
   color: #000; }
 
@@ -70,12 +74,15 @@ body {
   -o-transition: 1s;
   transition: 1s;
   will-change: transform; }
+  @media (max-width: 480px) {
+    .maincontent {
+      min-height: 0; } }
 
 .container {
   margin: 0 auto;
   position: relative;
   width: 95%;
-  max-width: 940px; }
+  max-width: 58.75rem; }
 
 .container--flex {
   -js-display: flex;
@@ -139,7 +146,10 @@ h2 {
   transform: translateX(-50%); }
   @media (max-width: 768px) {
     .arrow {
-      bottom: 0.625rem; } }
+      bottom: 1.25rem; } }
+  @media (max-width: 480px) {
+    .arrow {
+      bottom: 1.875rem; } }
 
 ul {
   padding: 0;
@@ -183,13 +193,15 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  padding-top: 0.75rem; }
 
 .logo {
-  margin: 0.4375rem 0 0 -0.1875rem;
+  display: inline-block;
   overflow: hidden;
   width: 5.75rem;
-  height: 4.3125rem; }
+  height: 4.3125rem;
+  z-index: 40; }
 
 .header__logo-image {
   max-width: 100%; }
@@ -434,27 +446,31 @@ button {
 
 /* Бургерный блок */
 .burger {
-  -webkit-box-flex: .8;
-  -ms-flex: .8;
-  flex: .8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-bottom: 15%; }
   @media (max-width: 768px) {
     .burger {
       padding-top: 50px; } }
+  @media (max-width: 480px) {
+    .burger {
+      padding-top: 10px; } }
 
 .burgerblock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  -ms-flex-item-align: center;
-  align-self: center;
   /* border: rem(1px) solid red; */
   /* width: rem(900px); */ }
   @media (max-width: 768px) {
@@ -464,37 +480,50 @@ button {
       -ms-flex-direction: column;
       flex-direction: column; } }
 
-.burgerblock__image {
-  overflow: hidden; }
-
 .burgerblock__image-img {
-  max-width: 100%; }
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  display: inline-block;
+  max-width: 100%;
+  max-width: 100%;
+  position: relative; }
+  @media (max-width: 768px) {
+    .burgerblock__image-img {
+      max-width: 80%; } }
+  @media (max-width: 480px) {
+    .burgerblock__image-img {
+      max-width: 80%; } }
 
 .burgerblock__block {
-  width: 50%; }
+  width: 50%;
+  float: left; }
   @media (max-width: 768px) {
     .burgerblock__block {
       width: 100%;
-      text-align: center; } }
+      float: none; } }
 
 .burgerblock__slogan {
-  text-align: left;
-  margin-top: 3.125rem; }
+  padding-top: 7.1875rem; }
   @media (max-width: 768px) {
     .burgerblock__slogan {
       text-align: center;
-      padding-top: 1.875rem; } }
-
-.burger-slogan-naturalburger,
-.burger-slogan-wedo {
-  /* display: block; */ }
+      padding: 1.75rem 20% 0; } }
+  @media (max-width: 480px) {
+    .burgerblock__slogan {
+      text-align: center;
+      padding-top: 0; } }
 
 .title__hero {
   font-size: 4.5rem;
   font-family: Gagalin;
   color: #f8b43a;
-  line-height: 1.8;
-  text-align: center; }
+  margin-bottom: 0.75rem;
+  text-align: left; }
+  @media (max-width: 768px) {
+    .title__hero {
+      text-align: center; } }
   @media (max-width: 480px) {
     .title__hero {
       font-size: 3.125rem; } }
@@ -503,11 +532,8 @@ button {
   font-size: 4.0625rem;
   font-family: LifeHack;
   color: #fff;
-  line-height: 0.923;
-  position: relative; }
-  @media (max-width: 768px) {
-    .burgerblock__naturalburgers {
-      margin: 0 10%; } }
+  text-transform: lowercase;
+  line-height: 1em; }
   @media (max-width: 480px) {
     .burgerblock__naturalburgers {
       font-size: 2.5rem; } }
@@ -537,7 +563,8 @@ button {
   text-align: center; }
   @media (max-width: 480px) {
     .title__best {
-      margin: 3.125rem 0; } }
+      margin-top: 0;
+      margin-bottom: 10px; } }
 
 .best__list {
   text-align: center;

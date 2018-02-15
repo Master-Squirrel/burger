@@ -1,11 +1,32 @@
 var req = new XMLHttpRequest();
 var error = false;
 var response;
-var orderButton = $('#orderButton');
+
 var closeButton = $('#closeButton');
 
-orderButton.on('click', e => {
 
+const displayModal = messageResponse => {
+
+    doOverlay('.order');
+    $('.modal').css('display', 'flex');
+    $('.modal')
+        .children('.modal__text')
+        .text(messageResponse);
+
+    closeButton.on('click', e => {
+        e.preventDefault();
+        $('.modal').css('display', 'none');
+        $('.overlay').remove();
+    })
+
+}
+
+//
+$('#order-form').on('submit', submitForm);
+
+function submitForm (ev) {
+    ev.preventDefault();
+    
     function checkForm(e) {
         var unfilled = false;
         var form = $('.order__form');
@@ -23,41 +44,37 @@ orderButton.on('click', e => {
             return true;
         }
     }
+   
+    //
+    var form = $(ev.target),
+        data = form.serialize(),
+        url = form.attr('action'),
+        type = form.attr('method');       
 
-    e.preventDefault();
+    ajaxForm(form).done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        
+        if (status === 'OK') {
+            displayModal(mes);
+        } else{
+            displayModal(mes);
+        }
+    }).fail(function(jqXHR, textStatus) {
+        displayModal("Request failed: " + textStatus);
+    });
+
+};
+
+// Универсальная функция для работы с формами
+var ajaxForm = function (form) {
+    var data = form.serialize(),
+        url = form.attr('action');
     
-    response = sendOrder();
-    console.log(response);
-    // displayModal(response);
-    
-})
-
-const sendOrder = e => {
-
-    var req = jQuery.ajax({
-       url: 'http://burger.questbusters.ru/answer.php',
-       success: result => {
-        return result;
-       }
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        dataType : 'JSON',
+        data: data
     })
-
-    
-    
-
-}
-
-const displayModal = messageResponse => {
-
-    doOverlay('.order');
-    $('.modal').css('display', 'flex');
-    $('.modal')
-        .children('.modal__text')
-        .text(messageResponse);
-
-    closeButton.on('click', e => {
-        e.preventDefault();
-        $('.modal').css('display', 'none');
-        $('.overlay').remove();
-    })
-
-}
+};

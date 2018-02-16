@@ -1,12 +1,18 @@
 <?php
 
-    $name = $_POST['user-name'];
-    $email = $_POST['user-email'];
-    $pay = $_POST['pay-option'];
-    $message = $_POST['message'];
-
-    $disturb = $_POST['dont-disturb']; // 1 или null
-    $disturb = isset($disturb) ? 'НЕТ' : 'ДА';
+    $name = $_POST['name'];
+    $street = $_POST['street'];
+    $phone = $_POST['phone'];
+    $house = $_POST['house'];
+    $block = $_POST['block'];
+    $flat = $_POST['flat'];
+    $floor = $_POST['floor'];
+    $formComments = $_POST['formComments'];
+    $paytype = $_POST['paytype'];
+    $recall = $_POST['recall'];
+    
+    $recall = isset($recall) ? 'НЕТ' : 'ДА';
+    $paytype = $paytype == 1 ? 'Наличные' : 'Карта';
 
     $mail_message = '
     <html>
@@ -14,13 +20,14 @@
         <title>Заявка</title>
     </head>
     <body>
-        <h2>Заказ</h2>
+        <h2>Заказан бургер</h2>
         <ul>
             <li>Имя:' . $name . '</li>
-            <li>Email: ' . $email . '</li>
-            <li>Способ оплаты: ' . $pay . '</li>
-            <li>Комментарий к заказу: ' . $message . '</li>
-            <li>Нужно ли перезванивать клиенту: ' . $disturb . '</li>
+            <li>Телефон:' . $phone . '</li>
+            <li>Адрес: ' . $street . "/" . $house . "/" . $floor . "/" . $flat . '</li>
+            <li>Способ оплаты: ' . $paytype . '</li>
+            <li>Комментарий к заказу: ' . $formComments . '</li>
+            <li>Нужно ли перезванивать клиенту: ' . $recall . '</li>
         </ul>
     </body>
     </html>';

@@ -9,7 +9,7 @@ accordion.addEventListener("click", function(e) {
     var trigger = e.target;
     var content = trigger.nextElementSibling;  
     var item = trigger.parentNode;
-    var wrap = content.getElementsByClassName('team__member')[0];
+
 
     if (!item.classList.contains("active")) { // не активный
       // удаляем active для всех li
@@ -32,7 +32,10 @@ accordion.addEventListener("click", function(e) {
       // } else {
       //   content.style.height = content.scrollHeight + "px";
       // }
-            
+          
+      var wrap = content.getElementsByClassName('team__member')[0];
+      console.log(wrap.scrollHeight);
+
       content.style.height = wrap.scrollHeight + "px";
 
     } else { // активный

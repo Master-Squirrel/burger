@@ -38,6 +38,6 @@ rightArrow.addEventListener('click', function (e) {
 window.addEventListener('resize', function() {
     size = parseInt(window.getComputedStyle(document.querySelector('.slider-container')).width);
     
-    currentLeft = (parseInt(getComputedStyle(burgerSlide).left));
+    var currentLeft = (parseInt(getComputedStyle(burgerSlide).left));
     burgerSlide.style.left = -size*(start-1) + 'px';
 })

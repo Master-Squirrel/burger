@@ -31,10 +31,6 @@
     top: 50%;
     left: -5%;
 
-}
-
-.slider__links-right {
-    
     @include middle1220 {
         left: -5%;
     }
@@ -50,13 +46,13 @@
     }
 }
 
-.slider__links-left {
+.slider__links-right {
+    
     @include middle1220 {
         right: -5%;
     }
     @include middle940 {
-        right: 2%;
-        // z-index: 50;
+        right: 2%;        
     }
     @include tablets {
         right: -10%;
@@ -65,6 +61,7 @@
         right: -15px;
     }
 }
+
 
 .slider__links-right {
     display: block;
@@ -189,7 +186,7 @@
     border-radius: 5px;
     background-color: rgba($color: #ffffff, $alpha: 0.8);
     padding: rem(20px);
-    @include phones {}
+    
 }
 
 .submenu__pos {

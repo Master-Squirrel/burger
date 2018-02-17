@@ -914,8 +914,8 @@ button {
   transition: 0.3s; }
 
 .member__img {
-  width: 6.25rem;
-  height: 5.3125rem;
+  width: 5.625rem;
+  height: 5.625rem;
   text-align: center;
   background-size: cover;
   background-position: center center;

@@ -84,8 +84,9 @@
     font-size: rem(14px);
     color: white;
     line-height: 1.714;
-    padding: rem(30px);
     
+    
+    width: 0;
 
     height: 100%;
     position: relative;
@@ -99,18 +100,21 @@
 
 }
 .accordion__item--active > .accordion__description {
-    width: rem(500px);
+    
+    // width: rem(500px);
 
     @include tablets {
-        width: rem(230px);
+        // width: rem(230px);
     }
 }
 
 .accordion__text {
     width: rem(470px);
+    
     height: 100%;
+    padding: rem(30px);
 
     @include tablets {
-        width: rem(200px);
+         width: rem(200px);
     }
 }

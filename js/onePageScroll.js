@@ -7,7 +7,7 @@ const isMobile = MobileDetect.mobile();
 
 const performTransition = sectionEq => {
     const position = `${sectionEq * -100}%`;
-    console.log(position);
+    
 
     if (inScroll) 
         return;
@@ -101,6 +101,7 @@ if (isMobile) {
             const scrollDirection = direction == 'down'
                 ? 'up'
                 : 'down';
+                
             scrollToSection(direction);
         }
 

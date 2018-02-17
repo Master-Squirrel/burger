@@ -41,3 +41,19 @@ window.addEventListener('resize', function() {
     currentLeft = (parseInt(getComputedStyle(burgerSlide).left));
     burgerSlide.style.left = -size*(start-1) + 'px';
 })
+
+//Slider Menu Button
+var ingrButton = document.querySelectorAll('.slider__menu');
+var ingrSubMenu = document.querySelectorAll('.slider__submenu');
+
+ingrButton.forEach(function(item) {
+
+    item.addEventListener('mouseover', function () {
+ 
+    item.nextElementSibling.style.display = "block";
+    })
+    item.addEventListener('mouseout', function () {
+      
+        item.nextElementSibling.style.display = "none";
+    })
+});

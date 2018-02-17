@@ -135,7 +135,8 @@
                                 <div class="best__item-data">
                                     <div class="best__subheader">100% свежее мясо</div>
                                     <div class="best__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
-                                        неравномерен.</div>
+                                        неравномерен.
+                                    </div>
                                 </div>
                             </li>
                             <li class="best__item">
@@ -956,104 +957,14 @@
 
     </ul>
 
-    <script>
-        //Modal windows - Order
-        doOverlay = section => {
-
-            var overlay = $('<div></div>').addClass('overlay');
-            $('.section')
-                .filter(section)
-                .append(overlay);
-
-        }
-
-        //Display Reviewes
-        var reviewesButtons = document.querySelectorAll('.reviews__button');
-        var fullReviewBock = document.querySelector('.reviews__fullreview');
-        var closeButtonReviewBock = document.querySelector('.review__close');
-
-        reviewesButtons.forEach(function (item) {
-            item.addEventListener('click', function (e) {
-                e.preventDefault();
-                doOverlay('.reviews');
-                fullReviewBock.style.display = "block";
-                fullReviewBock
-                    .childNodes[1]
-                    .childNodes[1]
-                    .textContent = item
-                    .parentNode
-                    .childNodes[1]
-                    .textContent;
-                fullReviewBock
-                    .childNodes[1]
-                    .childNodes[2]
-                    .textContent = item.nextElementSibling.textContent;
-
-            })
-        });
-
-        closeButtonReviewBock.addEventListener('click', function (item) {
-
-            $('.reviews__fullreview').hide();
-            $('.overlay').remove();
-
-        })
-    </script>
-
-    <script>
-        $('.accordion__item').on('click', e => {
-
-            e.preventDefault();
-            sticks = $('.accordion__item');
-            stick = $(e.currentTarget);
-            stickText = $(stick).find('.accordion__description');
-
-
-            console.log(stickText);
-             if (stick.hasClass('accordion__item--active')) {
-                $(stick).removeClass('accordion__item--active');
-                $(stickText).css('width', '0');
-             } else {
-                
-                $(sticks).each(e => {
-                    $(sticks).eq(e).find('.accordion__description').css('width', '0')
-                    $(sticks).eq(e).removeClass('accordion__item--active');
-                });
-                $(stick).addClass('accordion__item--active');
-                console.log($(stickText)[0].scrollWidth);
-                $(stickText).css('width',  + (stickText)[0].scrollWidth + 'px');
-             }
-
-        })
-    </script>
-
     <script src="./js/slider.js"></script>
     <script src="./js/mobilemenu.js"></script>
-    <!-- <script src="./js/team.js"></script> -->
-    <!-- <script src="./js/ops.js"></script> -->
-    <!-- <script src="./js/paginator.js"></script> -->
     <script src="./js/onePageScroll.js"></script>
     <script src="./js/acco_team.js"></script>
     <script src="./js/order.js"></script>
     <script src="./js/menu.js"></script>
-
-    <script>
-        var mobMenuButton = document.querySelector(".mob-menu");
-        var smallMenu = document.querySelector(".smallmenu");
-
-        mobMenuButton.addEventListener('click', function (e) {
-            e.preventDefault;
-            smallMenu.style.display = "flex";
-        })
-
-        smallMenu.addEventListener('click', function (e) {
-            e.preventDefault();
-            smallMenu.style.display = "none";
-        })
-    </script>
-
-    <script>
-    </script>
+    <script src="./js/reviews.js"></script>
+    <script src="./js/modal.js"></script>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/map.js"></script>

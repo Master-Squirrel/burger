@@ -7,11 +7,11 @@ const isMobile = MobileDetect.mobile();
 
 const performTransition = sectionEq => {
     const position = `${sectionEq * -100}%`;
-    
 
-    if (inScroll) 
+
+    if (inScroll)
         return;
-    
+
     inScroll = true;
 
     sections
@@ -20,13 +20,14 @@ const performTransition = sectionEq => {
         .siblings()
         .removeClass('activeS');
 
-    display.css(
-        {'transform': `translate(0, ${position})`, '-webkit-transform': `translate(0, ${position})`}
-    )
+    display.css({
+        'transform': `translate(0, ${position})`,
+        '-webkit-transform': `translate(0, ${position})`
+    })
     setActiveMenuItem(sectionEq);
 
     setTimeout(() => {
-        inScroll = false;        
+        inScroll = false;
     }, 1300); //1300 - это длительность анимации + инерция
 
 }
@@ -48,26 +49,31 @@ const scrollToSection = direction => {
 
 $(".wrapper").on({
     wheel: e => {
-
+        console.log('wheel');
         const deltaY = e.originalEvent.deltaY;
-        const direction = deltaY > 0
-            ? 'up'
-            : 'down';
+        const direction = deltaY > 0 ?
+            'up' :
+            'down';
 
         scrollToSection(direction);
     },
+
+    touchmove: function (e) {
+        return e.preventDefault()
+    }
+
+})
+
+$(document).on({
     keydown: e => {
+        console.log('Key');
         switch (e.keyCode) {
             case 40:
                 scrollToSection('up');
             case 38:
                 scrollToSection('down');
         }
-    },
-    touchmove: function (e) {
-        return e.preventDefault()
     }
-
 })
 
 //Формируем точки
@@ -75,8 +81,8 @@ const paginator = $('.paginator');
 
 sections.each(e => {
     var li = $('<li></li>')
-    .prop('className', ' paginator__item')
-    .html(`<a href="#" class="paginator__link" data-scroll-to="${e}"></a>`);
+        .prop('className', ' paginator__item')
+        .html(`<a href="#" class="paginator__link" data-scroll-to="${e}"></a>`);
 
     // .html(`<a href="#" class="paginator__link" data-scroll-to="${e}"></a>`);
     // paginator.append(`<li class="paginator__item"><a href="#" class="paginator__link" data-scroll-to="${e}"></a></li>`);
@@ -98,10 +104,10 @@ if (isMobile) {
         swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
             // Плагин возвращает фактическое движение пальца, а нам нужно направление
             // движение страницы
-            const scrollDirection = direction == 'down'
-                ? 'up'
-                : 'down';
-                
+            const scrollDirection = direction == 'down' ?
+                'up' :
+                'down';
+
             scrollToSection(direction);
         }
 
@@ -112,6 +118,6 @@ if (isMobile) {
 //Выделяем активные точки
 const setActiveMenuItem = itemEq => {
     $('.paginator__item').eq(itemEq).addClass('active')
-    .siblings()
-    .removeClass('active');
+        .siblings()
+        .removeClass('active');
 }

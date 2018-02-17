@@ -115,6 +115,10 @@
     padding: rem(30px);
 
     @include tablets {
-         width: rem(200px);
+         width: rem(300px);
+    }
+
+    @include small370 {
+        width: rem(200px);
     }
 }

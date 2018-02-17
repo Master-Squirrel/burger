@@ -1020,6 +1020,9 @@ button {
   padding: 1.875rem; }
   @media (max-width: 768px) {
     .accordion__text {
+      width: 18.75rem; } }
+  @media (max-width: 370px) {
+    .accordion__text {
       width: 12.5rem; } }
 
 .contacts {
@@ -1447,9 +1450,6 @@ button {
   @media (max-width: 480px) {
     .slider__burger {
       height: 50%; } }
-  @media (max-width: 5px) {
-    .slider__burger {
-      height: initial; } }
 
 .slider__menu {
   position: absolute;

@@ -40,6 +40,14 @@ window.addEventListener('resize', function() {
     
     currentLeft = (parseInt(getComputedStyle(burgerSlide).left));
     burgerSlide.style.left = -size*(start-1) + 'px';
+
+    //Закрыть вертикальный аакордион
+    sticks = $('.accordion__item');
+        
+        $(sticks).each(e => {
+            $(sticks).eq(e).find('.accordion__description').css('width', '0')
+            $(sticks).eq(e).removeClass('accordion__item--active');
+        });
 })
 
 //Slider Menu Button

@@ -142,7 +142,7 @@
         height: 50%;
     }
     @include smallphones {
-        height: initial;
+        // height: initial;
     }
 }
 

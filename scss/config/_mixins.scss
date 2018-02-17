@@ -21,6 +21,13 @@
         @content;
     }
 }
+@mixin small370 () {
+    @media (max-width: $small370) {
+        @content;
+    }
+}
+
+
 @mixin middle658 () {
     @media (max-width: $middle658) {
         @content;

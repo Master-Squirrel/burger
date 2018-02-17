@@ -33,7 +33,8 @@
 
 }
 
-.slider__links-right, .slider__links-left {
+.slider__links-right {
+    
     @include middle1220 {
         left: -5%;
     }
@@ -46,6 +47,22 @@
     }
     @include phones {
         left: -15px;
+    }
+}
+
+.slider__links-left {
+    @include middle1220 {
+        right: -5%;
+    }
+    @include middle940 {
+        right: 2%;
+        // z-index: 50;
+    }
+    @include tablets {
+        right: -10%;
+    }
+    @include phones {
+        right: -15px;
     }
 }
 
@@ -142,7 +159,7 @@
         height: 50%;
     }
     @include smallphones {
-        // height: initial;
+        height: initial;
     }
 }
 

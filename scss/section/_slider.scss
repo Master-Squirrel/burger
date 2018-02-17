@@ -7,9 +7,6 @@
 .slider-container {
     height: rem(475px);
     width: 1100px;
-
-    
-
     @include middle1220 {
         width: 800px;
     }
@@ -33,11 +30,23 @@
     position: absolute;
     top: 50%;
     left: -5%;
+
 }
 
 .slider__links-right, .slider__links-left {
-
-     
+    @include middle1220 {
+        left: -5%;
+    }
+    @include middle940 {
+        left: 2%;
+        // z-index: 50;
+    }
+    @include tablets {
+        left: -10%;
+    }
+    @include phones {
+        left: -15px;
+    }
 }
 
 .slider__links-right {
@@ -45,15 +54,11 @@
     position: absolute;
     top: 50%;
     right: -5%;
-    -moz-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
+    transform: scaleX(-1) translateY(-3px);
 }
 
 .slider__arrows {
     height: 33px;
-
     @include phones {
         // width: 75%;
         // height: 75%;
@@ -83,7 +88,7 @@
     height: 100%;
     left: 0;
     position: absolute;
-    
+    -js-display: flex;
     display: flex;    
     transition: 1s;
 }
@@ -114,11 +119,11 @@
 .slider__center {
     width: 100%;
     height: 100%;
-    
+    -js-display: flex;
     display: flex;
     justify-content: center;
     @include middle940 {
-        
+        -js-display: flex;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -127,7 +132,7 @@
 
 .slider__burger {
     // position: relative;
-    
+    -js-display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +176,7 @@
 }
 
 .submenu__pos {
-    
+    -js-display: flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -229,7 +234,7 @@
 }
 
 .slider__text {
-    
+    -js-display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;

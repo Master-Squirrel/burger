@@ -46,20 +46,9 @@ const scrollToSection = direction => {
     }
 }
 
-$(document).on({
-    keydown: e=> {
-        switch (e.keyCode) {
-            case 40:
-                scrollToSection('up');
-            case 38:
-                scrollToSection('down');
-        }
-    }
-})
-
 $(".wrapper").on({
     wheel: e => {
-        
+
         const deltaY = e.originalEvent.deltaY;
         const direction = deltaY > 0
             ? 'up'
@@ -68,7 +57,6 @@ $(".wrapper").on({
         scrollToSection(direction);
     },
     keydown: e => {
-        
         switch (e.keyCode) {
             case 40:
                 scrollToSection('up');

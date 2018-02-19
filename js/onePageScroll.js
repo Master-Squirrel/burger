@@ -34,6 +34,8 @@ const performTransition = sectionEq => {
 
 const scrollToSection = direction => {
 
+    if (isMobileMenuOpen) {return;}
+
     const activeSection = sections.filter('.activeS');
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();

@@ -29,28 +29,3 @@ $('.accordion__item').on('click', e => {
 
 })
 
-$('.menu').on('click', e => {
-
-    let flag = false;
-
-    $(e.originalEvent.path).each(item => {
-
-        if ($(e.originalEvent.path).eq(item).hasClass('accordion__item')) {
-
-            flag = true;
-        }
-
-    })
-
-    if (flag == false) {
-        $(sticks).each(e => {
-            $(sticks)
-                .eq(e)
-                .find('.accordion__description')
-                .css('width', '0')
-            $(sticks)
-                .eq(e)
-                .removeClass('accordion__item--active');
-        });
-    }
-})
